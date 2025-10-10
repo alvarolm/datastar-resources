@@ -7,7 +7,7 @@ A curated collection of resources for [Datastar](https://data-star.dev), the hyp
 <details>
 <summary>About Datastar</summary>
 
-Datastar is a lightweight hypermedia framework that enables developers to build reactive web applications using simple HTML attributes (`data-*`) and server-side logic. It eliminates the need for complex JavaScript frameworks while providing real-time capabilities, reactive frontend, and multiplayer features out of the box.
+Datastar is a lightweight hypermedia framework that enables developers to build reactive web applications using simple HTML attributes (`data-*`) and server-side logic. It eliminates the need for complex JavaScript frameworks while providing real-time capabilities, reactive frontend, and other features out of the box.
 
 **Official Links:**
 - 🌐 [Official Website](https://data-star.dev)
