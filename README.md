@@ -12,6 +12,7 @@ Datastar is a lightweight hypermedia framework that enables developers to build 
 **Official Links:**
 - 🌐 [Official Website](https://data-star.dev)
 - 📚 [GitHub Repository](https://github.com/starfederation/datastar/)
+- 🏢 [GitHub Organization](https://github.com/starfederation) - Official SDKs for Python, Java, PHP, .NET, Clojure, Rust, Kotlin, Go, Ruby, and more
 - 📖 [Documentation](https://data-star.dev/guide)
 </details>
 
@@ -44,6 +45,10 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[Stario](https://github.com/Bobowski/stario)** - Lightweight Python web framework built on Starlette for joyful, HTML-first development. Features Server-Sent Events support, Datastar patches/signals integration, simple dependency injection, and built-in Brotli compression. Emphasizes minimal complexity and rapid prototyping. By [@Bobowski](https://github.com/Bobowski) #python #backend #framework #real-time
 
+- **[datastar.wow](https://github.com/brianium/datastar.wow)** - Data-oriented Clojure library for building Datastar applications. Provides middleware for Ring handlers with simplified signal handling, data-oriented effects, Hiccup support, and extensible registries. Built on the official Datastar Clojure SDK, Nexus, and optionally Charred (JSON) and Chassis (HTML). By [@brianium](https://github.com/brianium) #clojure #backend #library
+
+- **[gleam-datastar](https://github.com/sporto/gleam-datastar)** - Gleam language bindings for building reactive web applications with Datastar. Includes three packages: core Datastar bindings for frontend actions and server-sent events, Wisp integration, and Lustre integration. Provides type-safe tools for server-side rendering with reactive capabilities. By [@sporto](https://github.com/sporto) #gleam #backend #library
+
 #### Guides & How-tos
 
 - **[Intercepting and Modifying SSE Streams](/docs/intercepting-sse-streams.md)** - Advanced technique using fetch monkey-patching to intercept and transform SSE responses before Datastar processes them. Includes error handling examples. By [@alvarolm](https://github.com/alvarolm) #real-time #patterns #advanced
@@ -58,11 +63,17 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[Why I Switched from HTMX to Datastar](https://everydaysuperpowers.dev/articles/why-i-switched-from-htmx-to-datastar/)** - Personal account of transitioning from HTMX to Datastar, highlighting Datastar's simpler API, component-based approach, real-time SSE updates, and server-driven state management. Explores multi-user collaborative applications and web-native features like CSS view transitions. By Everyday Superpowers #comparison #htmx #real-time #sse
 
+- **[Datastar + Common Lisp](https://interlaye.red/datastar_002dcommon_002dlisp.html)** - Exploration of using Datastar with a Common Lisp backend for reactive web development. Discusses the benefits of server-side state management and alternative approaches to complex modern frameworks, showcasing a simpler and more enjoyable development experience. #commonlisp #introduction #tutorial
+
 #### Examples
+
+- **[Minification Measurements](https://delaneyj.github.io/minification_measurements/)** - Performance measurement tool demonstrating the impact of JavaScript library minification on web page load times. Compares minified vs unminified versions of HTMX, Alpine.js, Datastar, and other libraries using real-world mobile network conditions and Core Web Vitals metrics. By [@delaneyj](https://github.com/delaneyj) #performance #metrics #optimization
 
 - **[One billion cells](https://cells.andersmurphy.com/)** - A Clojure implementation of the One Billion Row Challenge. By Anders Murphy #clojure #performance
 
 - **[unac](https://github.com/Regaez/unac)** - Ultimate Noughts and Crosses (Tic-Tac-Toe) web game built with Go and Datastar. Live demo at [unac.threadgold.nz](https://unac.threadgold.nz). By [@Regaez](https://github.com/Regaez) #go #game
+
+- **[Blinksy](https://play.putyourlightson.com/blinksy)** - Real-time multiplayer demo application built with Laravel and Datastar. Showcases the capabilities of the Laravel Datastar package for building interactive, multi-user experiences. By [@putyourlightson](https://github.com/putyourlightson) #laravel #multiplayer #real-time #demo
 
 #### Videos & Screencasts
 
