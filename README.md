@@ -15,72 +15,71 @@ Datastar is a lightweight hypermedia framework that enables developers to build 
 
 ---
 
-## Categories
+## Organization
 
-This repository organizes Datastar resources into three main categories:
+This repository organizes Datastar references by category. The structure and subcategories will be adapted as the collection grows.
+When a reference needs additional context or detailed explanation, a dedicated markdown file can be created in the `/docs` directory.
 
-### 📦 [Software](./software/)
-Libraries, frameworks, SDKs, and tools built for or compatible with Datastar.
+### 📚 References
 
-**Topics covered:**
-- #backend - Server-side software (SDK and others)
-- #frontend - Front-end software (non plugins)
-- #frontend-plugins - Extensions and plugins
-- #integrations - Integration with other frameworks and tools
-- #cli-tools - Command-line utilities
+#### Libraries & Tools
 
-[Browse Software →](./software/)
+- **[datastar-resilient](https://github.com/alvarolm/datastar-resilient)** - A library for building resilient web applications with auto-recovering SSE connections. Features configurable backoff/retry strategies, connection state monitoring, and stream manipulation. By [@alvarolm](https://github.com/alvarolm) #frontend #real-time #resilience
 
----
+- **[Solidstar](https://github.com/solidstarjs/solidstar)** - Almost drop-in replacement for Datastar using SolidJS reactivity system. Enables interoperability between hypermedia-driven frontend logic and Solid components. Features TypeScript support, reactive web components, and efficient signal-based state management (14.7 KiB gzipped). By [@solidstarjs](https://github.com/solidstarjs) #frontend #solidjs #reactivity
 
-### 📝 [How-to](./howto/)
-Guidelines, tutorials, code snippets, and practical examples for working with Datastar.
+- **[DatastarUI](https://github.com/CoreyCole/datastarui)** - Go/templ component library porting shadcn/ui with minimal JavaScript. Provides server-side rendered, reactive components with Tailwind CSS styling, type-safe arguments, built-in dark mode, and comprehensive accessibility support. By [@CoreyCole](https://github.com/CoreyCole) #components #go #templ #backend
 
-**Topics covered:**
-- #getting-started - Beginner guides and setup instructions
-- #patterns - Common patterns and best practices
-- #real-time - Server-sent events and streaming
-- #state-management - Managing state in Datastar apps
-- #forms - Form handling and validation
-- #authentication - Auth patterns and examples
-- #deployment - Production deployment guides
+- **[northstar](https://github.com/zangster300/northstar)** - Boilerplate for creating real-time hypermedia applications with Datastar, Go, NATS, Templ, and Tailwind CSS. Includes embedded NATS server, live reload, web components support, and Docker containerization. By [@zangster300](https://github.com/zangster300) #backend #boilerplate #go #real-time
 
-[Browse How-to Guides →](./howto/)
+- **[HyperPress](https://github.com/EstebanForge/HyperPress)** - WordPress plugin for modern hypermedia development with HTMX, Alpine AJAX, and Datastar. Features REST API for HTML partials, HyperFields (custom metadata API), and HyperBlocks (PHP-first Gutenberg blocks). By [@EstebanForge](https://github.com/EstebanForge) #wordpress #backend #integrations #php
 
----
+- **[Laravel Datastar](https://github.com/putyourlightson/laravel-datastar)** - Laravel package for building reactive frontends with Datastar. Provides Blade directives for element patching, signal management, and backend-driven state management. Enables live search, infinite scrolling, form submissions, and pagination without frontend frameworks. By [@putyourlightson](https://github.com/putyourlightson) #laravel #backend #integrations #php
 
-### 💡 [Ideas](./ideas/)
-Concepts, proposals, and ideas that could enhance the Datastar ecosystem or aid developers.
+- **[Electron SSR](https://github.com/StreamUI/ssr-electron)** - Novel approach to building Electron desktop applications using server-side rendering from the main process. Eliminates traditional IPC complexity by allowing direct access to Node.js modules and Electron APIs. Supports htmx, Alpine.js, and Datastar. By [@StreamUI](https://github.com/StreamUI) #electron #desktop #integrations
 
-**Topics covered:**
-- #tooling - Development tools and utilities
-- #ecosystem - Ecosystem improvements
-- #devex - Developer experience enhancements
-- #features - Feature requests and proposals
-- #use-cases - Novel use cases and applications
-- #integrations - Integration ideas with other technologies
-- #learning - Educational resources and materials
+#### Guides & How-tos
 
-[Browse Ideas →](./ideas/)
+- **[Intercepting and Modifying SSE Streams](/docs/intercepting-sse-streams.md)** - Advanced technique using fetch monkey-patching to intercept and transform SSE responses before Datastar processes them. Includes error handling examples. By [@alvarolm](https://github.com/alvarolm) #real-time #patterns #advanced
+
+- **[Signaling When Datastar Has Loaded](/docs/signaling-datastar-loaded.md)** - How to dispatch a custom event when Datastar initializes, enabling third-party libraries to safely interact with Datastar-managed elements. #patterns #integrations #getting-started
+
+- **[Basic SSE Reconnection Workaround](/docs/basic-sse-reconnection-workaround.md)** - Simple polling mechanism to maintain SSE connections through server restarts. Note: This is a basic workaround approach. By [@gazpachoking](https://github.com/gazpachoking) #real-time #patterns #workaround
+
+#### Articles & Blog Posts
+
+- **[Datastar: First Impressions](https://chrismalek.me/posts/data-star-first-impressions/)** - Detailed exploration of Datastar as an alternative to HTMX, covering reactive programming with signals, Server-Sent Events, and server-centric architecture. Compares Datastar with traditional frameworks and explains core concepts like actions and fragments. By Chris Malek #introduction #comparison #architecture
+
+- **[Why I Switched from HTMX to Datastar](https://everydaysuperpowers.dev/articles/why-i-switched-from-htmx-to-datastar/)** - Personal account of transitioning from HTMX to Datastar, highlighting Datastar's simpler API, component-based approach, real-time SSE updates, and server-driven state management. Explores multi-user collaborative applications and web-native features like CSS view transitions. By Everyday Superpowers #comparison #htmx #real-time #sse
+
+#### Examples
+
+- **[One billion cells](https://cells.andersmurphy.com/)** - A Clojure implementation of the One Billion Row Challenge. By Anders Murphy #clojure #performance
+
+#### Videos & Screencasts
+
+- **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
+
+#### Community Collections
+
+- **[Awesome Datastar](https://github.com/Yacobolo/awesome-datastar)** - A curated awesome list of Datastar resources including official links, blog posts, development tools, video presentations, example projects, and podcasts. Community-maintained collection for developers learning and using Datastar. By [@Yacobolo](https://github.com/Yacobolo) #community #collection #learning
 
 ---
 
 ## Contributing
 
-Contributions are welcome! To add a resource:
+Contributions are welcome! To add a reference:
 
-1. Choose the appropriate category directory
-2. Add your resource following the category's structure
-3. Use relevant hashtags for discoverability
-4. Include clear descriptions and links
-5. Submit a pull request
+1. Add your reference to the **References** section in this README
+2. Include clear descriptions and links
+3. Add attribution when applicable (author, source, etc.)
+4. Hashtags are optional but encouraged for discoverability
+5. If additional context is needed, create a markdown file in `/docs`
+6. Submit a pull request
 
 ---
 
 ## Community
 
-- 💬 [Discord](https://discord.gg/datastar)
-- 🎥 [YouTube](https://www.youtube.com/@datastardev)
-- 🐦 Follow [@datastardev](https://twitter.com/datastardev)
-
----
+- 💬 [Discord](https://discord.gg/bnRNgZjgPh)
+- 🎥 [YouTube](https://www.youtube.com/@data-star)

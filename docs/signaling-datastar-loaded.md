@@ -2,6 +2,8 @@
 
 #patterns #integrations #getting-started
 
+> **Version**: Applicable for Datastar v1.0.0-RC.5
+
 ## Overview
 
 Third-party libraries or custom scripts sometimes need to know when Datastar has fully initialized before they can safely interact with Datastar-managed elements or signals. This guide shows how to dispatch a custom event when Datastar is ready.
@@ -18,7 +20,17 @@ Place this element in your HTML where you want to signal Datastar's initializati
 
 ## How It Works
 
-1. **`data-on-load`**: This attribute executes its expression when the element is loaded into the DOM, which happens during initial page load
+### Attribute Explained
+
+**`data-on-load`**
+- A Datastar event attribute that triggers when an element is loaded into the DOM
+- Executes during initial page load for elements present in the HTML
+- Also fires when elements are dynamically patched into the DOM via SSE updates
+- Provides a reliable hook for initialization code
+
+### Flow
+
+1. **Element Load**: When Datastar processes the element with `data-on-load`, it executes the expression
 2. **Custom Event**: `document.dispatchEvent(new CustomEvent('datastar-loaded', {bubbles: true}))` creates and dispatches a custom event that bubbles up through the DOM
 3. **Third-party integration**: External scripts can listen for this event to know when Datastar is ready
 
