@@ -51,6 +51,8 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 #### Guides & How-tos
 
+- **[Simplicity Is A Virtue: How To Build Modern Web Apps With Datastar](https://iansmith.github.io/dsbook/)** - Comprehensive book and learning guide for Datastar (work in progress). Aims to be the definitive resource for learning Datastar with a focus on simplicity and practical application. Uses the "mirabeau" presentation tool as a demonstration project. By [@delaneyj](https://github.com/delaneyj) and [@iansmith](https://github.com/iansmith) #getting-started #tutorial #learning
+
 - **[Intercepting and Modifying SSE Streams](/docs/intercepting-sse-streams.md)** - Advanced technique using fetch monkey-patching to intercept and transform SSE responses before Datastar processes them. Includes error handling examples. By [@alvarolm](https://github.com/alvarolm) #real-time #patterns #advanced
 
 - **[Signaling When Datastar Has Loaded](/docs/signaling-datastar-loaded.md)** - How to dispatch a custom event when Datastar initializes, enabling third-party libraries to safely interact with Datastar-managed elements. #patterns #integrations #getting-started
@@ -78,6 +80,8 @@ When a reference needs additional context or detailed explanation, a dedicated m
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
+
+- **[Datastar – The hypermedia framework (Podcast)](https://open.spotify.com/show/2DQ8iwAiLF8BhUaCos3t9U)** - Official Datastar podcast discussing how Datastar helps build reactive web applications with the simplicity of server-side rendering and the power of a full-stack SPA framework. Episodes cover tooling, performance, signals, and framework design. #podcast #introduction #architecture
 
 #### Community Collections
 
