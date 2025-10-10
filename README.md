@@ -38,6 +38,10 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[Electron SSR](https://github.com/StreamUI/ssr-electron)** - Novel approach to building Electron desktop applications using server-side rendering from the main process. Eliminates traditional IPC complexity by allowing direct access to Node.js modules and Electron APIs. Supports htmx, Alpine.js, and Datastar. By [@StreamUI](https://github.com/StreamUI) #electron #desktop #integrations
 
+- **[starHTML](https://github.com/banditburai/starHTML)** - Python-first hypermedia web framework forked from FastHTML, using Datastar for client-side reactivity. Features type-safe development with IDE support, Server-Sent Events for real-time interactions, and framework-agnostic CSS compatibility. Enables reactive web applications using Python syntax. By [@banditburai](https://github.com/banditburai) #python #backend #framework #real-time
+
+- **[Stario](https://github.com/Bobowski/stario)** - Lightweight Python web framework built on Starlette for joyful, HTML-first development. Features Server-Sent Events support, Datastar patches/signals integration, simple dependency injection, and built-in Brotli compression. Emphasizes minimal complexity and rapid prototyping. By [@Bobowski](https://github.com/Bobowski) #python #backend #framework #real-time
+
 #### Guides & How-tos
 
 - **[Intercepting and Modifying SSE Streams](/docs/intercepting-sse-streams.md)** - Advanced technique using fetch monkey-patching to intercept and transform SSE responses before Datastar processes them. Includes error handling examples. By [@alvarolm](https://github.com/alvarolm) #real-time #patterns #advanced
@@ -55,6 +59,8 @@ When a reference needs additional context or detailed explanation, a dedicated m
 #### Examples
 
 - **[One billion cells](https://cells.andersmurphy.com/)** - A Clojure implementation of the One Billion Row Challenge. By Anders Murphy #clojure #performance
+
+- **[unac](https://github.com/Regaez/unac)** - Ultimate Noughts and Crosses (Tic-Tac-Toe) web game built with Go and Datastar. Live demo at [unac.threadgold.nz](https://unac.threadgold.nz). By [@Regaez](https://github.com/Regaez) #go #game
 
 #### Videos & Screencasts
 
