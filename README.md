@@ -69,6 +69,8 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[Datastar + Common Lisp](https://interlaye.red/datastar_002dcommon_002dlisp.html)** - Exploration of using Datastar with a Common Lisp backend for reactive web development. Discusses the benefits of server-side state management and alternative approaches to complex modern frameworks, showcasing a simpler and more enjoyable development experience. #commonlisp #introduction #tutorial
 
+- **[just f*cking use datastar](https://blog.legires.fr/2025/10/11/just_fucking_use_datastar.html)** - Satirical critique of modern web development complexity, advocating for Datastar as a simpler alternative to frameworks like React. Emphasizes native web technologies and reactive data attributes over complicated frontend tooling. By le guide #opinion #comparison #simplicity
+
 #### Examples
 
 - **[Minification Measurements](https://delaneyj.github.io/minification_measurements/)** - Performance measurement tool demonstrating the impact of JavaScript library minification on web page load times. Compares minified vs unminified versions of HTMX, Alpine.js, Datastar, and other libraries using real-world mobile network conditions and Core Web Vitals metrics. By [@delaneyj](https://github.com/delaneyj) #performance #metrics #optimization
@@ -78,6 +80,8 @@ When a reference needs additional context or detailed explanation, a dedicated m
 - **[unac](https://github.com/Regaez/unac)** - Ultimate Noughts and Crosses (Tic-Tac-Toe) web game built with Go and Datastar. Live demo at [unac.threadgold.nz](https://unac.threadgold.nz). By [@Regaez](https://github.com/Regaez) #go #game
 
 - **[Blinksy](https://play.putyourlightson.com/blinksy)** - Real-time multiplayer demo application built with Laravel and Datastar. Showcases the capabilities of the Laravel Datastar package for building interactive, multi-user experiences. By [@putyourlightson](https://github.com/putyourlightson) #laravel #multiplayer #real-time #demo
+
+- **[Datastar Remix Jam Demos](https://codeberg.org/jmstevers/datastar-remix-jam-demos)** - Collection of demo applications built with Datastar and Remix. By [@jmstevers](https://codeberg.org/jmstevers) #remix #react #demo
 
 #### Videos & Screencasts
 
