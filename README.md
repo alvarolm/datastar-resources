@@ -71,6 +71,10 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[just f*cking use datastar](https://blog.legires.fr/2025/10/11/just_fucking_use_datastar.html)** - Satirical critique of modern web development complexity, advocating for Datastar as a simpler alternative to frameworks like React. Emphasizes native web technologies and reactive data attributes over complicated frontend tooling. By le guide #opinion #comparison #simplicity
 
+- **[ui = fn(state) done right](https://yagni.club/3m3anpetejc23)** - Technical blog post critiquing modern frontend complexity and proposing a simpler "ui = function(state)" approach using hypermedia and server-side rendering. Introduces Single Route Architecture with Datastar for keeping state on the backend, includes practical counter app example. #architecture #simplicity #tutorial #backend
+
+- **[Datastar attribute plugin for signal value translation](https://jasalt.dev/blog/datastar-attribute-plugin/)** - Tutorial on creating a custom Datastar attribute plugin (`data-textlabel`) to decouple UI formatting from signal values. Demonstrates extending the built-in `data-text` attribute with custom processing rules, using a labels object for value translation, and working with Datastar's plugin API. Includes full code examples on GitHub/Codeberg and CodePen. By Jarkko Saltiola #tutorial #plugin #advanced #patterns
+
 #### Examples
 
 - **[Minification Measurements](https://delaneyj.github.io/minification_measurements/)** - Performance measurement tool demonstrating the impact of JavaScript library minification on web page load times. Compares minified vs unminified versions of HTMX, Alpine.js, Datastar, and other libraries using real-world mobile network conditions and Core Web Vitals metrics. By [@delaneyj](https://github.com/delaneyj) #performance #metrics #optimization
