@@ -105,7 +105,7 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Using Datastar
 
-- **[Conductor Sam](https://conductorsam.com)** - AI-powered train travel assistant for Europe and beyond. Provides instant answers for rail journey planning, route suggestions, seat reservations, station information, and ticket purchasing. Built with Datastar for interactive conversational interface. #ai #travel #production
+- **[Conductor Sam](https://conductorsam.com)** - AI-powered train travel assistant for Europe and beyond. Provides instant answers for rail journey planning, route suggestions, seat reservations, station information, and ticket purchasing. Built with Datastar for interactive conversational interface. By [@mortalife](https://github.com/mortalife) #ai #travel #production
 
 ---
 
