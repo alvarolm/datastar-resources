@@ -23,7 +23,7 @@ Datastar is a lightweight hypermedia framework that enables developers to build 
 This repository organizes Datastar references by category. The structure and subcategories will be adapted as the collection grows.
 When a reference needs additional context or detailed explanation, a dedicated markdown file can be created in the `/docs` directory.
 
-A specific section called **Using Datastar** showcases real-world production applications built with Datastar.
+A specific section called **[Using Datastar](#using-datastar)** showcases real-world production applications built with Datastar.
 
 ### 📚 References
 
