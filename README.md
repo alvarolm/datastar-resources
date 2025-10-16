@@ -23,6 +23,8 @@ Datastar is a lightweight hypermedia framework that enables developers to build 
 This repository organizes Datastar references by category. The structure and subcategories will be adapted as the collection grows.
 When a reference needs additional context or detailed explanation, a dedicated markdown file can be created in the `/docs` directory.
 
+A specific section called **Using Datastar** showcases real-world production applications built with Datastar.
+
 ### 📚 References
 
 #### Libraries & Tools
@@ -87,6 +89,10 @@ When a reference needs additional context or detailed explanation, a dedicated m
 
 - **[Datastar Remix Jam Demos](https://codeberg.org/jmstevers/datastar-remix-jam-demos)** - Collection of demo applications built with Datastar and Remix. By [@jmstevers](https://codeberg.org/jmstevers) #remix #react #demo
 
+- **[Explainers: Gerrymandering](https://schreiaj.github.io/explainers/gerrymandering/)** - Interactive educational tool demonstrating how congressional district boundaries affect electoral outcomes. Uses Datastar's reactive signals, computed properties, and data binding to visualize partisan bias across 435 U.S. House districts with dynamic national outcome simulations. Source: [github.com/schreiaj/explainers](https://github.com/schreiaj/explainers). By [@schreiaj](https://github.com/schreiaj) #demo #educational #visualization
+
+- **[datastar-chat-example-ts](https://github.com/Mortalife/datastar-chat-example-ts)** - Real-time chat application demonstrating Datastar with server-side rendering. Built with TypeScript, Hono web framework, and SQLite/LibSQL database. Features user authentication, session management, and Docker containerization. Includes Tailwind CSS and DaisyUI for styling. By [@Mortalife](https://github.com/Mortalife) #typescript #real-time #chat #hono #demo
+
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
@@ -96,6 +102,10 @@ When a reference needs additional context or detailed explanation, a dedicated m
 #### Community Collections
 
 - **[Awesome Datastar](https://github.com/Yacobolo/awesome-datastar)** - A curated awesome list of Datastar resources including official links, blog posts, development tools, video presentations, example projects, and podcasts. Community-maintained collection for developers learning and using Datastar. By [@Yacobolo](https://github.com/Yacobolo) #community #collection #learning
+
+#### Using Datastar
+
+- **[Conductor Sam](https://conductorsam.com)** - AI-powered train travel assistant for Europe and beyond. Provides instant answers for rail journey planning, route suggestions, seat reservations, station information, and ticket purchasing. Built with Datastar for interactive conversational interface. #ai #travel #production
 
 ---
 
