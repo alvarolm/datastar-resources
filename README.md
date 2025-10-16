@@ -93,6 +93,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[datastar-chat-example-ts](https://github.com/Mortalife/datastar-chat-example-ts)** - Real-time chat application demonstrating Datastar with server-side rendering. Built with TypeScript, Hono web framework, and SQLite/LibSQL database. Features user authentication, session management, and Docker containerization. Includes Tailwind CSS and DaisyUI for styling. By [@Mortalife](https://github.com/Mortalife) #typescript #real-time #chat #hono #demo
 
+- **[Datastar JS Interop Demo](https://github.com/biotz/datastar-js-interop-demo)** - Exploration of bidirectional integration between Datastar and third-party JavaScript libraries. Demonstrates seamless data and control flow using Google Maps API wrapped in a Web Component. Shows how to use `data-bind`, `data-attr`, and `data-ref` for reactive updates and method invocation with external JS libraries. By [@biotz](https://github.com/biotz) #javascript #interoperability #webcomponents #demo
+
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
