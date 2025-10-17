@@ -95,6 +95,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Datastar JS Interop Demo](https://github.com/biotz/datastar-js-interop-demo)** - Exploration of bidirectional integration between Datastar and third-party JavaScript libraries. Demonstrates seamless data and control flow using Google Maps API wrapped in a Web Component. Shows how to use `data-bind`, `data-attr`, and `data-ref` for reactive updates and method invocation with external JS libraries. By [@biotz](https://github.com/biotz) #javascript #interoperability #webcomponents #demo
 
+- **[Datastar React Interop Demo](https://github.com/biotz/datastar-react-interop-demo)** - Demonstration of bidirectional integration between Datastar and React components using Web Components as a bridge. Features Floating UI as a practical example, showing how to wrap React components for Datastar compatibility with bidirectional data flow (Datastar signals → React props, React events → Datastar signals). Includes generic conversion function for React-to-Web-Component transformation. By [@biotz](https://github.com/biotz) #react #javascript #interoperability #webcomponents #demo
+
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
