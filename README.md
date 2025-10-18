@@ -29,6 +29,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Libraries & Tools
 
+- **[datastar-scoped-signals](https://github.com/Hackder/datastar-scoped-signals)** - Copy-paste utility plugin for adding scoped signal functionality to Datastar. Provides local state management with `data-scope` attribute for isolated signal namespaces, `@scoped()` and `@scopedSet()` functions for reading/writing scoped signals, and automatic cleanup. Includes `data-scoped-indicator` for loading states during async operations. By [@Hackder](https://github.com/Hackder) #frontend #signals #plugin #state-management
+
 - **[datastar-resilient](https://github.com/alvarolm/datastar-resilient)** - A library for building resilient web applications with auto-recovering SSE connections. Features configurable backoff/retry strategies, connection state monitoring, and stream manipulation. By [@alvarolm](https://github.com/alvarolm) #frontend #real-time #resilience
 
 - **[Solidstar](https://github.com/solidstarjs/solidstar)** - Almost drop-in replacement for Datastar using SolidJS reactivity system. Enables interoperability between hypermedia-driven frontend logic and Solid components. Features TypeScript support, reactive web components, and efficient signal-based state management (14.7 KiB gzipped). By [@solidstarjs](https://github.com/solidstarjs) #frontend #solidjs #reactivity
@@ -78,6 +80,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 - **[Datastar attribute plugin for signal value translation](https://jasalt.dev/blog/datastar-attribute-plugin/)** - Tutorial on creating a custom Datastar attribute plugin (`data-textlabel`) to decouple UI formatting from signal values. Demonstrates extending the built-in `data-text` attribute with custom processing rules, using a labels object for value translation, and working with Datastar's plugin API. Includes full code examples on GitHub/Codeberg and CodePen. By Jarkko Saltiola #tutorial #plugin #advanced #patterns
 
 #### Examples
+
+- **[todostar](https://github.com/romshark/todostar)** - Collaborative todo application demonstrating server-driven web development with minimal JavaScript. Built with Go, Templ templates, Datastar, TailwindCSS, and WebAwesome web components. Showcases hypermedia-first architecture with ~2,000 lines of Go code and hot-reloading via Templier. By [@romshark](https://github.com/romshark) #go #demo #collaborative #server-driven
 
 - **[Minification Measurements](https://delaneyj.github.io/minification_measurements/)** - Performance measurement tool demonstrating the impact of JavaScript library minification on web page load times. Compares minified vs unminified versions of HTMX, Alpine.js, Datastar, and other libraries using real-world mobile network conditions and Core Web Vitals metrics. By [@delaneyj](https://github.com/delaneyj) #performance #metrics #optimization
 
