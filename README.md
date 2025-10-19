@@ -113,7 +113,15 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Using Datastar
 
-- **[Conductor Sam](https://conductorsam.com)** - AI-powered train travel assistant for Europe and beyond. Provides instant answers for rail journey planning, route suggestions, seat reservations, station information, and ticket purchasing. Built with Datastar for interactive conversational interface. By [@mortalife](https://github.com/mortalife) #ai #travel #production
+- **[Conductor Sam](https://conductorsam.com)** - AI-powered train travel assistant for Europe and beyond. Provides instant answers for rail journey planning, route suggestions, seat reservations, station information, and ticket purchasing. Built with Datastar for interactive conversational interface. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. By [@mortalife](https://github.com/mortalife) #ai #travel #production
+
+- **[Muto Mobility](https://mutomobility.com)** - Mobility Intelligence Platform helping companies manage all aspects of mobility including cars, bikes, budgets, contracts, and charging stations in one unified platform. From Latin "to move or change", Muto modernizes how businesses handle evolving mobility needs. *Datastar v1.0.0-beta.11 (detected 2025-10-19)*. #mobility #business #saas #production
+
+- **[Buena Vista Winery](https://buenavistawinery.com/)** - Historic winery website for California's second oldest winery, founded in 1857 by Agoston Haraszthy and located in Sonoma, California. Uses a framework that has Datastar as a dependency. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. #winery #business #production
+
+- **[Pizza Ranch](https://pizzaranch.com/)** - Family-friendly buffet restaurant chain offering pizza, chicken, salad bar, and FunZone Arcade games. Features full menu for carryout and delivery ordering. Uses a framework that has Datastar as a dependency. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. #restaurant #food #business #production
+
+- **[Open Squash](https://opensquash.org/)** - Leading 501(c)(3) nonprofit squash organization in New York City committed to making squash accessible and affordable for everyone. Offers world-class facilities, professional coaching, leagues, clinics, and a vibrant community for players of all ages and levels. Uses a framework that has Datastar as a dependency. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. #sports #nonprofit #community #production
 
 ---
 
@@ -126,7 +134,13 @@ Contributions are welcome! To add a reference:
 3. Add attribution when applicable (author, source, etc.)
 4. Hashtags are optional but encouraged for discoverability
 5. If additional context is needed, create a markdown file in `/docs`
-6. Submit a pull request
+6. **Version Tracking for "Using Datastar"**: When 
+ submitting entries to the "Using Datastar" category, include 
+ (if possible) the Datastar version detected and the date when
+ it was detected. This helps track framework adoption and 
+ compatibility as Datastar evolves.
+7. Submit a pull request
+
 
 ---
 
