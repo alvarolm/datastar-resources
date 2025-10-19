@@ -29,6 +29,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Libraries & Tools
 
+- **[dataSPA Inspector](https://github.com/dataSPA/dataSPA-inspector)** - Browser inspector/debugger for Datastar and dataSPA applications, providing functionality similar to Datastar Pro's Inspector. Shows current page signals with element highlighting and scroll-to-element on shift-click, displays signal and element patch events from the server with console logging, clipboard copying, and event replay capabilities. Toggle between table and object views for signal inspection. By [@lllama](https://github.com/lllama) (Felix Ingram) #frontend #debugging #devtools #inspector #signals
+
 - **[datastar-scoped-signals](https://github.com/Hackder/datastar-scoped-signals)** - Copy-paste utility plugin for adding scoped signal functionality to Datastar. Provides local state management with `data-scope` attribute for isolated signal namespaces, `@scoped()` and `@scopedSet()` functions for reading/writing scoped signals, and automatic cleanup. Includes `data-scoped-indicator` for loading states during async operations. By [@Hackder](https://github.com/Hackder) #frontend #signals #plugin #state-management
 
 - **[datastar-resilient](https://github.com/alvarolm/datastar-resilient)** - A library for building resilient web applications with auto-recovering SSE connections. Features configurable backoff/retry strategies, connection state monitoring, and stream manipulation. By [@alvarolm](https://github.com/alvarolm) #frontend #real-time #resilience
