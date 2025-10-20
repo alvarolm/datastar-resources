@@ -57,6 +57,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[gleam-datastar](https://github.com/sporto/gleam-datastar)** - Gleam language bindings for building reactive web applications with Datastar. Includes three packages: core Datastar bindings for frontend actions and server-sent events, Wisp integration, and Lustre integration. Provides type-safe tools for server-side rendering with reactive capabilities. By [@sporto](https://github.com/sporto) #gleam #backend #library
 
+- **[datastar.http.zig](https://github.com/zigster64/datastar.http.zig)** - Zig programming language implementation of the Datastar SDK, fully conforming to the official specification. Features stream-based architecture with no implicit allocations, support for all patch operations (DOM, signals, scripts), built-in pub/sub system for multiplayer scenarios, and passes all official Datastar validation tests. Built on Zig 0.15.2 and http.zig library, optimized for microsecond-level performance and minimal memory footprints. By [@zigster64](https://github.com/zigster64) #zig #backend #library #performance
+
 #### Guides & How-tos
 
 - **[Simplicity Is A Virtue: How To Build Modern Web Apps With Datastar](https://iansmith.github.io/dsbook/)** - Comprehensive book and learning guide for Datastar (work in progress). Aims to be the definitive resource for learning Datastar with a focus on simplicity and practical application. Uses the "mirabeau" presentation tool as a demonstration project. By [@delaneyj](https://github.com/delaneyj) and [@iansmith](https://github.com/iansmith) #getting-started #tutorial #learning
@@ -124,6 +126,12 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 - **[Pizza Ranch](https://pizzaranch.com/)** - Family-friendly buffet restaurant chain offering pizza, chicken, salad bar, and FunZone Arcade games. Features full menu for carryout and delivery ordering. Uses a framework that has Datastar as a dependency. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. #restaurant #food #business #production
 
 - **[Open Squash](https://opensquash.org/)** - Leading 501(c)(3) nonprofit squash organization in New York City committed to making squash accessible and affordable for everyone. Offers world-class facilities, professional coaching, leagues, clinics, and a vibrant community for players of all ages and levels. Uses a framework that has Datastar as a dependency. *Datastar v1.0.0-RC.5 (detected 2025-10-19)*. #sports #nonprofit #community #production
+
+- **[Electrical Wholesaler](https://www.electricalwholesaler.ie/)** - Irish electrical wholesale supplier. *Datastar main version (detected 2025-10-20)*. #business #ecommerce #production
+
+- **[THFC Database](https://thfcdb.com/)** - Interactive comprehensive database for Tottenham Hotspur Football Club featuring detailed historical records and statistics. Provides match results, competition statistics across Premier League, FA Cup, European tournaments, player information, transfer records, and unique Scorigami feature tracking score combinations. Covers over 7,600 competitive matches with detailed filtering and historical analysis. *Datastar v1.0.0-RC.5 (detected 2025-10-20)*. #sports #football #database #statistics #production
+
+- **[10,000 Steps](https://www.10000steps.org.au/)** - Free evidence-based physical activity initiative by CQUniversity Australia, operating since 2001. Provides step tracking, monthly challenges, tournaments, workplace wellness programs, and community engagement features. Mobile app integrates with Apple Health and Health Connect. Over 714,000 members have logged 462+ billion steps. Funded by Health and Wellbeing Queensland. *Datastar main version (detected 2025-10-20)*. #health #fitness #wellness #australia #nonprofit #production
 
 ---
 
