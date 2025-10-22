@@ -97,6 +97,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Blinksy](https://play.putyourlightson.com/blinksy)** - Real-time multiplayer demo application built with Laravel and Datastar. Showcases the capabilities of the Laravel Datastar package for building interactive, multi-user experiences. By [@putyourlightson](https://github.com/putyourlightson) #laravel #multiplayer #real-time #demo
 
+- **[Craft CMS Datastar Demos](https://craftcms.data-star.dev/)** - Interactive demonstration site showcasing Datastar integration with Craft CMS. Features four practical examples: live search, pagination, load more functionality, and filters. Built using the Datastar Plugin for Craft CMS. By [@putyourlightson](https://github.com/putyourlightson) #craftcms #demo #php
+
 - **[Datastar Remix Jam Demos](https://codeberg.org/jmstevers/datastar-remix-jam-demos)** - Collection of demo applications built with Datastar and Remix. By [@jmstevers](https://codeberg.org/jmstevers) #remix #react #demo
 
 - **[Explainers: Gerrymandering](https://schreiaj.github.io/explainers/gerrymandering/)** - Interactive educational tool demonstrating how congressional district boundaries affect electoral outcomes. Uses Datastar's reactive signals, computed properties, and data binding to visualize partisan bias across 435 U.S. House districts with dynamic national outcome simulations. Source: [github.com/schreiaj/explainers](https://github.com/schreiaj/explainers). By [@schreiaj](https://github.com/schreiaj) #demo #educational #visualization
