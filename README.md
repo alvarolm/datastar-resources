@@ -141,6 +141,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[10,000 Steps](https://www.10000steps.org.au/)** - Free evidence-based physical activity initiative by CQUniversity Australia, operating since 2001. Provides step tracking, monthly challenges, tournaments, workplace wellness programs, and community engagement features. Mobile app integrates with Apple Health and Health Connect. Over 714,000 members have logged 462+ billion steps. Funded by Health and Wellbeing Queensland. *Datastar main version (detected 2025-10-20)*. #health #fitness #wellness #australia #nonprofit #production
 
+- **[CARM](https://carm.online)** - Christian Apologetics Research Ministry providing educational resources for Christian apologetics and theology. Features articles addressing theological questions, Matt Slick Live Radio broadcasts (M-F 6PM EST), community discussion forums, online schools and courses, and shop for apologetics materials. *Datastar v1.0.0-RC.5 (detected 2025-10-22)*. #education #community #radio #production
+
 ---
 
 ## Contributing
