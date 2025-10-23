@@ -65,6 +65,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[datastar.http.zig](https://github.com/zigster64/datastar.http.zig)** - Zig programming language implementation of the Datastar SDK, fully conforming to the official specification. Features stream-based architecture with no implicit allocations, support for all patch operations (DOM, signals, scripts), built-in pub/sub system for multiplayer scenarios, and passes all official Datastar validation tests. Built on Zig 0.15.2 and http.zig library, optimized for microsecond-level performance and minimal memory footprints. By [@zigster64](https://github.com/zigster64) #zig #backend #library #performance
 
+- **[Datastar for Java](https://github.com/mailq/datajava)** - Unofficial Datastar SDK for any pure Java HTTP server framework like Spring, Quarkus or Jakarta EE. No dependencies, no Maven or any build tool required. Just copy and paste two files to your source tree. By [@mailq](https://github.com/mailq) #java #backend #nobuild
+
 #### Guides & How-tos
 
 - **[Simplicity Is A Virtue: How To Build Modern Web Apps With Datastar](https://iansmith.github.io/dsbook/)** - Comprehensive book and learning guide for Datastar (work in progress). Aims to be the definitive resource for learning Datastar with a focus on simplicity and practical application. Uses the "mirabeau" presentation tool as a demonstration project. By [@delaneyj](https://github.com/delaneyj) and [@iansmith](https://github.com/iansmith) #getting-started #tutorial #learning
