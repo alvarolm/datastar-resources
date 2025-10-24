@@ -131,6 +131,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Datastar – The hypermedia framework (Podcast)](https://open.spotify.com/show/2DQ8iwAiLF8BhUaCos3t9U)** - Official Datastar podcast discussing how Datastar helps build reactive web applications with the simplicity of server-side rendering and the power of a full-stack SPA framework. Episodes cover tooling, performance, signals, and framework design. #podcast #introduction #architecture
 
+- **[Datastar Presentation (Slidev)](https://datastar-presentation.onrender.com/)** - Interactive slide deck presentation about Datastar built with Slidev. #presentation #introduction
+
 #### Community Collections
 
 - **[Awesome Datastar](https://github.com/Yacobolo/awesome-datastar)** - A curated awesome list of Datastar resources including official links, blog posts, development tools, video presentations, example projects, and podcasts. Community-maintained collection for developers learning and using Datastar. By [@Yacobolo](https://github.com/Yacobolo) #community #collection #learning
