@@ -127,6 +127,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Datastar React Interop Demo](https://github.com/biotz/datastar-react-interop-demo)** - Demonstration of bidirectional integration between Datastar and React components using Web Components as a bridge. Features Floating UI as a practical example, showing how to wrap React components for Datastar compatibility with bidirectional data flow (Datastar signals → React props, React events → Datastar signals). Includes generic conversion function for React-to-Web-Component transformation. By [@biotz](https://github.com/biotz) #react #javascript #interoperability #webcomponents #demo
 
+- **[at-a-star-firehose](https://github.com/derekr/at-a-star-firehose)** - Real-time filterable interface for viewing the Bluesky atproto firehose. Demonstrates Datastar's reactive rendering capabilities combined with Bluesky's public data feed for real-time data visualization and filtering. Built with TypeScript and Bun. By [@derekr](https://github.com/derekr) #typescript #bluesky #real-time #demo
+
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
