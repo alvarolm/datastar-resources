@@ -43,6 +43,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Solidstar](https://github.com/solidstarjs/solidstar)** - Almost drop-in replacement for Datastar using SolidJS reactivity system. Enables interoperability between hypermedia-driven frontend logic and Solid components. Features TypeScript support, reactive web components, and efficient signal-based state management (14.7 KiB gzipped). By [@solidstarjs](https://github.com/solidstarjs) #frontend #solidjs #reactivity
 
+- **[gomponents-datastar](https://github.com/maragudk/gomponents-datastar)** - Go library providing Datastar attributes and helpers for gomponents. Enables integration of Datastar functionality into the gomponents component system with helper functions to streamline Datastar usage in Go-based web development. Mostly feature-complete and actively developed. MIT License. By [@maragudk](https://github.com/maragudk) #go #library #backend #components
+
 - **[DatastarUI](https://github.com/CoreyCole/datastarui)** - Go/templ component library porting shadcn/ui with minimal JavaScript. Provides server-side rendered, reactive components with Tailwind CSS styling, type-safe arguments, built-in dark mode, and comprehensive accessibility support. By [@CoreyCole](https://github.com/CoreyCole) #components #go #templ #backend
 
 - **[northstar](https://github.com/zangster300/northstar)** - Boilerplate for creating real-time hypermedia applications with Datastar, Go, NATS, Templ, and Tailwind CSS. Includes embedded NATS server, live reload, web components support, and Docker containerization. By [@zangster300](https://github.com/zangster300) #backend #boilerplate #go #real-time
@@ -54,6 +56,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 - **[Datastar for Craft CMS](https://putyourlightson.com/plugins/datastar)** - Craft CMS plugin for building reactive web interfaces using Twig templates. Features template-driven state management, backend request handling, and support for live search, infinite scroll, and form submissions. Free and open-source (MIT License). By [@putyourlightson](https://github.com/putyourlightson) #craftcms #backend #integrations #php
 
 - **[Electron SSR](https://github.com/StreamUI/ssr-electron)** - Novel approach to building Electron desktop applications using server-side rendering from the main process. Eliminates traditional IPC complexity by allowing direct access to Node.js modules and Electron APIs. Supports htmx, Alpine.js, and Datastar. By [@StreamUI](https://github.com/StreamUI) #electron #desktop #integrations
+
+- **[ft-datastar](https://github.com/banditburai/ft-datastar)** - Python library integrating Datastar with FastHTML framework. Provides helper functions for dynamic attribute binding, two-way form binding, computed properties, event handlers, and conditional rendering. Includes SSE decorator for real-time signal and DOM fragment updates, plus `FastHTMLDatastarSSEResponse` class for streaming responses. Ships with Datastar v1.0.0-beta.8. By [@banditburai](https://github.com/banditburai) #python #backend #library #fasthtml #real-time
 
 - **[starHTML](https://github.com/banditburai/starHTML)** - Python-first hypermedia web framework forked from FastHTML, using Datastar for client-side reactivity. Features type-safe development with IDE support, Server-Sent Events for real-time interactions, and framework-agnostic CSS compatibility. Enables reactive web applications using Python syntax. By [@banditburai](https://github.com/banditburai) #python #backend #framework #real-time
 
@@ -93,7 +97,13 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Examples
 
+- **[1a5s-datastar](https://github.com/delaneyj/1a5s-datastar)** - Reimplementation of the "1 App 5 Stacks" project using Go, Templ, and Datastar, demonstrating high-performance web development with minimal code. Features just 321 lines of Go across 6 files plus ~125 lines of Templ, sub-millisecond query execution, 19MB memory footprint, and single binary deployment with no external dependencies. Uses pure Go SQLite implementation and standard HTTP requests (supports HTTP/2 and HTTP/3). By [@delaneyj](https://github.com/delaneyj) #go #demo #performance #templ #minimal
+
+- **[realworld-datastar](https://github.com/delaneyj/realworld-datastar)** - RealWorld application implementation built with Go, Templ, and Datastar. Provides a full-stack reference implementation demonstrating authentication, database seeding, and task-based development workflow. Requires Go 1.23+ with watch mode for development. MIT License. By [@delaneyj](https://github.com/delaneyj) #go #demo #realworld #templ #fullstack
+
 - **[todostar](https://github.com/romshark/todostar)** - Collaborative todo application demonstrating server-driven web development with minimal JavaScript. Built with Go, Templ templates, Datastar, TailwindCSS, and WebAwesome web components. Showcases hypermedia-first architecture with ~2,000 lines of Go code and hot-reloading via Templier. By [@romshark](https://github.com/romshark) #go #demo #collaborative #server-driven
+
+- **[multi_db](https://github.com/asmorris/multi_db)** - Rails 8 demonstration project showcasing multi-database architecture with SQLite where each user gets their own isolated database. Features automatic database creation on first login, migration management across user databases, Rodauth authentication, and Datastar for frontend interactions. Includes Docker/Kamal deployment configuration. Experimental exploration of per-user database isolation for SaaS applications. By [@asmorris](https://github.com/asmorris) #rails #ruby #sqlite #demo #architecture #saas
 
 - **[Minification Measurements](https://delaneyj.github.io/minification_measurements/)** - Performance measurement tool demonstrating the impact of JavaScript library minification on web page load times. Compares minified vs unminified versions of HTMX, Alpine.js, Datastar, and other libraries using real-world mobile network conditions and Core Web Vitals metrics. By [@delaneyj](https://github.com/delaneyj) #performance #metrics #optimization
 
