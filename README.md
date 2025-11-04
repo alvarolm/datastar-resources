@@ -137,6 +137,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[at-a-star-firehose](https://github.com/derekr/at-a-star-firehose)** - Real-time filterable interface for viewing the Bluesky atproto firehose. Demonstrates Datastar's reactive rendering capabilities combined with Bluesky's public data feed for real-time data visualization and filtering. Built with TypeScript and Bun. By [@derekr](https://github.com/derekr) #typescript #bluesky #real-time #demo
 
+- **[kanban-comparison](https://github.com/json-bateman/kanban-comparison)** - Comprehensive comparison of 10 modern web frameworks measuring real-world bundle sizes using identical Kanban board implementations. Compares Next.js, TanStack Start, Nuxt 4, Analog, Marko, SolidStart, SvelteKit, Qwik City, Astro + HTMX, and Datastar. Features rigorous statistical methods with 10 runs per page, outlier removal, and mobile device emulation (Pixel 5, 4G throttling). All frameworks achieve excellent Lighthouse performance scores (100), with Datastar demonstrating competitive bundle size in the MPA/SSE category. By [@json-bateman](https://github.com/json-bateman) #benchmark #comparison #performance #bundle-size
+
 #### Videos & Screencasts
 
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
