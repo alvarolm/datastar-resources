@@ -149,6 +149,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Datastar Presentation (Slidev)](https://datastar-presentation.onrender.com/)** - Interactive slide deck presentation about Datastar built with Slidev. #presentation #introduction
 
+- **[Real-Time Collaboration with Sprig and Datastar](https://craftcms.com/events/dot-all-2025/sessions/real-time-collaboration-with-sprig-and-datastar)** - Conference session at Dot All 2025 Lisbon (September 24, 2025) exploring how to leverage Sprig and Datastar to create dynamic, real-time, multi-player experiences driven by the backend within Craft CMS sites. By Ben Croker #conference #craftcms #real-time #multiplayer #sprig
+
 #### Community Collections
 
 - **[Awesome Datastar](https://github.com/Yacobolo/awesome-datastar)** - A curated awesome list of Datastar resources including official links, blog posts, development tools, video presentations, example projects, and podcasts. Community-maintained collection for developers learning and using Datastar. By [@Yacobolo](https://github.com/Yacobolo) #community #collection #learning
