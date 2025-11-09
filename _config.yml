@@ -3,8 +3,8 @@
 # Site settings
 title: Datastar Resources
 description: A community-driven collection of resources for Datastar, a hypermedia framework for building reactive web applications
-url: ""
-baseurl: ""
+url: "https://alvarolm.github.io"
+baseurl: "/datastar-resources"
 
 # Theme (using remote_theme for GitHub Pages compatibility)
 remote_theme: pages-themes/cayman@v0.2.0
