@@ -1,0 +1,45 @@
+# GitHub Pages Configuration for Datastar Resources
+
+# Site settings
+title: Datastar Resources
+description: A community-driven collection of resources for Datastar, a hypermedia framework for building reactive web applications
+url: ""
+baseurl: ""
+
+# Theme
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+
+# Include/exclude files
+include:
+  - README.md
+  - docs/
+
+exclude:
+  - CLAUDE.md
+  - .gitignore
+  - .tool-versions
+  - .claude/
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Plugin settings
+relative_links:
+  enabled: true
+  collections: true
+
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
+# Optional front matter (allows markdown files without YAML front matter)
+optional_front_matter:
+  enabled: true
