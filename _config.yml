@@ -6,8 +6,8 @@ description: A community-driven collection of resources for Datastar, a hypermed
 url: ""
 baseurl: ""
 
-# Theme
-theme: jekyll-theme-cayman
+# Theme (using remote_theme for GitHub Pages compatibility)
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Build settings
 markdown: kramdown
@@ -25,6 +25,7 @@ exclude:
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-optional-front-matter
   - jekyll-readme-index
