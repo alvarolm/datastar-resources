@@ -27,6 +27,12 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 ### 📚 References
 
+#### AI Learning Resources
+
+- **[Datastar Wiki on DeepWiki](https://deepwiki.com/starfederation/datastar)** - Comprehensive technical wiki documenting Datastar's architecture, reactive system implementation, plugin architecture, expression engine mechanics, and DOM integration. Includes detailed reference material for backend SDKs, JavaScript library usage, data attributes, build system, and IDE extensions. Covers implementation details like signals-based reactivity and SSE protocol specifications. Updated November 7, 2025. #documentation #wiki #reference #technical
+
+- **[Datastar on Context7](https://context7.com/websites/data-star_dev)** - AI-optimized documentation index aggregating Datastar's official documentation with 487 code snippets, 137 pages, and 52,401 tokens of indexed content. Provides searchable documentation interface and raw documentation tokens for AI model integration. Benchmark score of 70.5 for documentation quality. Updated October 16, 2025. #documentation #ai-index #reference #search
+
 #### Libraries & Tools
 
 - **[dataSPA](https://github.com/dataSPA/dataSPA)** - Friendly fork of the Datastar hypermedia framework that restores features from the beta version that were removed or moved to Datastar Pro. Includes all open-core Datastar attributes and actions (data-bind, data-class, data-computed, HTTP methods), plus restored premium features like data-persist, data-replace-url, data-scroll-into-view, and data-view-transition. Features free browser devtools extension, reproducible builds, and DIY bundler approach. Prioritizes accessibility to previously paid features with community support. By [@lllama](https://github.com/lllama) (Felix Ingram) #frontend #framework #fork #alternative
@@ -42,6 +48,10 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 - **[datastar-attribute-on-keys](https://github.com/mbolli/datastar-attribute-on-keys)** - Plugin for binding keyboard events to reactive actions via `data-on-keys` attribute. Supports multi-key combinations (Alt-Q, Ctrl-Shift-S), multiple key bindings with OR logic (Escape.Enter), event scope options (global or element focus), and modifier support for preventing defaults and event propagation. Available as npm package `@mbolli/datastar-attribute-on-keys`. By [@mbolli](https://github.com/mbolli) #frontend #plugin #keyboard #events
 
 - **[datastar-attribute-prop](https://github.com/mbolli/datastar-attribute-prop)** - Plugin extending Datastar with property binding capabilities via `data-prop` attribute. Enables reactive signal binding directly to DOM element properties (not HTML attributes) for use cases like input values, checkbox states, and custom web component properties. Supports single property binding and multiple properties using object syntax. Available as npm package `@mbolli/datastar-attribute-prop`. By [@mbolli](https://github.com/mbolli) #frontend #plugin #property-binding #reactivity
+
+- **[data-on-remove](https://github.com/regaez/data-on-remove)** - Lightweight plugin enabling execution of custom Datastar expressions when DOM elements are removed from the page. Provides `data-on-remove` attribute with access to special variables (`el` for removed element, `parent` for former parent node). Use cases include performance measurement, security verification of sensitive data removal, and signal cleanup. MIT License. Available as npm package. By [@Regaez](https://github.com/Regaez) #frontend #plugin #dom #lifecycle
+
+- **[datastar-cleanup](https://github.com/alvarolm/datastar-cleanup)** - Lightweight plugin (234 bytes minified) for automatic cleanup execution when DOM elements are removed. Provides `data-on-cleanup` attribute for declarative resource disposal, timer cleanup, state management, and logging. Handles direct element removal, cascading child cleanups, and DOM morphing scenarios. Leverages Datastar's built-in mutation observation system. By [@alvarolm](https://github.com/alvarolm) #frontend #plugin #dom #lifecycle #cleanup
 
 - **[datastar-resilient](https://github.com/alvarolm/datastar-resilient)** - A library for building resilient web applications with auto-recovering SSE connections. Features configurable backoff/retry strategies, connection state monitoring, and stream manipulation. By [@alvarolm](https://github.com/alvarolm) #frontend #real-time #resilience
 
