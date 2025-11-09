@@ -1,0 +1,182 @@
+/* Dark Theme for Datastar Resources */
+
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e8e8e8;
+  --text-secondary: #b8b8b8;
+  --accent: #64b5f6;
+  --accent-dark: #4a9fd6;
+  --border: #404040;
+  --code-bg: #2a2a2a;
+  --banner-bg: #252525;
+  --link-color: #64b5f6;
+  --link-hover: #90caf9;
+}
+
+/* Info Banner */
+.info-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 2px solid #3b82f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+/* Body and Background */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Header */
+.page-header {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border-bottom: 3px solid var(--accent);
+}
+
+.project-name {
+  color: var(--text-primary);
+}
+
+.project-tagline {
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--accent);
+  border: 1px solid var(--accent-dark);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: var(--accent-dark);
+  border-color: var(--accent);
+}
+
+/* Main Content */
+.main-content {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  max-width: 1200px;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Links */
+.main-content a {
+  color: var(--link-color);
+}
+
+.main-content a:hover {
+  color: var(--link-hover);
+}
+
+/* Headings */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Code Blocks */
+.main-content pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.main-content code {
+  background-color: var(--code-bg);
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.main-content pre code {
+  color: var(--text-primary);
+}
+
+/* Blockquotes */
+.main-content blockquote {
+  background-color: var(--bg-tertiary);
+  border-left: 4px solid var(--accent);
+  color: var(--text-secondary);
+}
+
+/* Tables */
+.main-content table {
+  border-collapse: collapse;
+}
+
+.main-content table thead {
+  background-color: var(--bg-tertiary);
+}
+
+.main-content table th,
+.main-content table td {
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: var(--bg-tertiary);
+}
+
+.main-content table tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Horizontal Rules */
+.main-content hr {
+  border: 0;
+  border-top: 2px solid var(--border);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--bg-primary);
+  border-top: 2px solid var(--border);
+  color: var(--text-secondary);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.site-footer-owner,
+.site-footer-credits {
+  color: var(--text-secondary);
+}
+
+.site-footer a {
+  color: var(--link-color);
+}
+
+.site-footer a:hover {
+  color: var(--link-hover);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
+  .banner-content {
+    font-size: 13px;
+  }
+}
