@@ -27,7 +27,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 ### 📚 References
 
-#### AI Learning Resources
+#### AI Learning Resources 
+**(before use, please read the official documentation at [https://data-star.dev/](https://data-star.dev/), always double check the results, use of AI is discouraged by the datastar authors)**
 
 - **[Datastar Wiki on DeepWiki](https://deepwiki.com/starfederation/datastar)** - Comprehensive technical wiki documenting Datastar's architecture, reactive system implementation, plugin architecture, expression engine mechanics, and DOM integration. Includes detailed reference material for backend SDKs, JavaScript library usage, data attributes, build system, and IDE extensions. Covers implementation details like signals-based reactivity and SSE protocol specifications. Updated November 7, 2025. #documentation #wiki #reference #technical
 
