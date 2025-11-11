@@ -1,6 +1,6 @@
 # Datastar Resources
 
-A curated collection of resources for [Datastar](https://data-star.dev), the hypermedia framework for building reactive web applications.
+A collection of resources for [Datastar](https://data-star.dev), the hypermedia framework for building reactive web applications.
 
 > **Note:** This repository is not endorsed by Datastar or its authors. It is a community-driven collection of resources.
 
