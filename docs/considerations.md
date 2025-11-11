@@ -19,8 +19,8 @@ The client-side API (datastar.js) has incomplete documentation. Specifically, th
 <details>
 <summary><h3>Pre-1.0 Stability Makes Production Risky</h3></summary>
 
-The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase. This pattern suggests that even v1.0.0 may not guarantee stability, requiring developers to plan for future migration efforts.
-
+The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
+Datastar author have stated: "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
 </details>
 
 ## State Management Limitations
