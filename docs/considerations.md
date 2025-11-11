@@ -1,0 +1,195 @@
+# Datastar Production Considerations
+
+> **About This Document**
+> This document outlines known limitations, architectural trade-offs, and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **November 2025 (v1.0.0-RC.6)**.
+>
+> **Disclaimer:** This is not official Datastar documentation. It represents a critical analysis of the framework's current state to supplement the official documentation. Always consult the [official Datastar documentation](https://data-star.dev) and [GitHub repository](https://github.com/starfederation/datastar) for the most current information.
+
+## Documentation Gaps
+
+<details>
+<summary><h3>Incomplete Client API Documentation</h3></summary>
+
+The client-side API (datastar.js) has incomplete documentation. Specifically, the plugins API documentation is currently a work in progress. It is recommended that developers read the source code directly to understand plugin implementation details.
+
+</details>
+
+## API Stability Concerns
+
+<details>
+<summary><h3>Pre-1.0 Stability Makes Production Risky</h3></summary>
+
+The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase. This pattern suggests that even v1.0.0 may not guarantee stability, requiring developers to plan for future migration efforts.
+
+</details>
+
+## State Management Limitations
+
+<details>
+<summary><h3>State Persistence Challenges</h3></summary>
+
+Signals do not persist across page redirects or full page reloads. Each page load starts with a fresh state. Applications requiring state persistence must implement manual mechanisms such as:
+- localStorage (client-side storage)
+- Query parameters (URL-based state)
+- Cookies (HTTP-based state)
+
+This limitation may make Datastar challenging for applications requiring robust offline capabilities or complex state management across navigation events without additional architectural planning.
+
+</details>
+
+## Security Vulnerabilities
+
+<details>
+<summary><h3>Critical: XSS Vulnerability as Architectural Limitation</h3></summary>
+
+**Acknowledgment:** Documented in official Datastar security documentation
+
+Datastar has an inherent security vulnerability by design:
+
+**The Core Issue:**
+Datastar expressions execute arbitrary JavaScript via the `Function()` constructor, creating an inherent XSS (Cross-Site Scripting) attack surface. The framework **does not automatically escape user input** in `data-*` attributes. Every user-provided value requires manual escaping, and failure to do so enables arbitrary code execution.
+
+**Developer Responsibility:**
+The security documentation explicitly warns "never trust user input" but places the full burden of input sanitization on developers. There are no automatic protections, guardrails, or validation mechanisms built into the framework.
+
+**Content Security Policy Impact:**
+This design choice mandates `unsafe-eval` in Content Security Policy (CSP), fundamentally weakening the application's security posture. Organizations with strict CSP requirements (common in enterprise, government, healthcare, and financial sectors) may be unable to use Datastar without violating their security policies.
+
+**Risk Assessment:**
+Developers should exercise extreme caution when processing untrusted content, ensuring meticulous manual escaping of every dynamic value. One oversight in input sanitization can compromise the entire application. This architectural choice requires a higher level of security awareness compared to frameworks with built-in escaping mechanisms.
+
+**Framework Comparison:**
+Many lightweight frameworks face similar trade-offs between flexibility and security:
+- **Alpine.js** uses `Function()` constructor for expression evaluation, requiring `unsafe-eval` in CSP and similar manual escaping vigilance
+- **Vue.js** (runtime + compiler) automatically escapes template interpolations by default, with explicit opt-in for raw HTML via `v-html`
+- **React** escapes JSX expressions by default, with explicit opt-in for raw HTML via `dangerouslySetInnerHTML`
+- **Svelte** escapes template expressions by default during compilation, with explicit opt-in via `{@html}`
+
+Datastar's approach is similar to Alpine.js in prioritizing simplicity and small bundle size over built-in security mechanisms, requiring developers to implement their own escaping strategies. Frameworks with compilation steps (Vue, React, Svelte) can provide better defaults at the cost of build complexity.
+
+</details>
+
+## Impractical Default Behaviors
+
+<details>
+<summary><h3>Stale Signal State on SSE Reconnection (Issue #900)</h3></summary>
+
+**Status:** Open issue reported in v1.0.0-beta.11, confirmed in RC.5 and RC.6
+**Acknowledgment:** Acknowledged by Datastar team; under evaluation for potential default behavior change
+
+**The Problem:**
+When Server-Sent Events (SSE) connections automatically reconnect after interruption, Datastar sends signals with their **initial values from when the connection was first established**, rather than their **current values** at reconnection time. This creates a critical state synchronization problem.
+
+**Real-World Impact:**
+Consider a 5-minute SSE connection where users interact with the application, modifying multiple signal values through form inputs, button clicks, and other interactions. If the SSE connection drops and automatically reconnects:
+- The server receives outdated signal state from the initial connection
+- All user interactions that occurred during the connection are lost
+- The application state becomes desynchronized between client and server
+- Users may lose work or experience unexpected behavior
+
+**Example Scenario:**
+```html
+<div data-init="$count++; @get('/endpoint')">
+```
+If `$count` was incremented from 0 to 50 during the SSE session, a reconnection would send `$count=0` to the server instead of `$count=50`.
+
+**The Semantic Debate:**
+The Datastar team argues that semantically, a "retry" implies resending the initial request with initial state. However, multiple users counter that:
+- "Reconnect" is conceptually different from "retry"
+- A "retry" suggests a failed request that needs to be repeated
+- A "reconnect" suggests an interrupted connection that needs to be resumed with current state
+- For long-lived SSE connections with user interactions, current state is essential
+
+**Current Workaround:**
+Developers must manually handle reconnections using the `data-on:datastar-fetch` event:
+```html
+<div data-on:datastar-fetch="
+  evt.detail.type === 'error' && console.log('Fetch error encountered')
+"></div>
+```
+Users can then manually reinitiate the request, which will send current signals. However, this requires:
+- Understanding the edge case exists
+- Writing custom error handling logic
+- Implementing manual reconnection management
+- Additional code complexity
+
+**Proposed Solutions:**
+1. **Change default behavior** to send current signal values (currently being investigated by @andersmurphy)
+2. **Make behavior configurable** with options:
+   - `"original"` (default): Send original request with old signals (semantically correct for retry)
+   - `"current"`: Send current signals (practical for reconnect scenarios)
+3. **Add explicit `data-on:reconnect` event** to make behavior more explicit and controllable
+
+**Developer Pain Points:**
+Multiple developers have reported spending significant time debugging issues caused by this behavior:
+- Unexpected state mismatches after reconnection
+- Lost form data or user interactions
+- Difficulty retrieving current values from sessionStorage to send to server
+- Need for additional round-trips to synchronize state
+- Documentation gaps around SSE lifecycle and reconnection behavior
+
+**Impact Assessment:**
+This is classified as an **impractical default behavior** rather than a bug because:
+- It's technically working as semantically designed ("retry" = initial state)
+- However, it violates the principle of least surprise for developers
+- Real-world usage patterns expect current state on reconnection
+- The workaround burden is significant
+- It creates a subtle but critical failure mode that's hard to debug
+
+**Resolution Status:**
+As of the latest updates (v1.0.0-RC.6), the team is still evaluating whether to change this behavior. The most recent comment indicates active work toward changing the default to send current signals, but no timeline has been provided.
+
+</details>
+
+## Performance Limitations
+
+<details>
+<summary><h3>Critical: 6-Connection SSE Limit on HTTP/1.1</h3></summary>
+
+Datastar relies heavily on Server-Sent Events (SSE) for server-to-client communication. This creates a **critical architectural bottleneck** when used over HTTP/1.1.
+
+**Why This Still Matters in 2025:**
+According to Cloudflare's 2024 Year in Review (analyzing millions of requests globally), **29.9% of all web requests in 2024 used HTTP/1.x**, with HTTP/2 at 49.6% and HTTP/3 at 20.5%. This means **nearly 30% of global web traffic still operates under HTTP/1.1's 6-connection limit**, making this a current and significant constraint rather than a legacy concern.
+
+**The Problem:**
+- HTTP/1.1 browsers enforce a strict limit of 6 concurrent connections per domain (RFC 2616)
+- Each SSE connection permanently occupies one of these 6 slots—since SSE responses never complete, the connection remains in a "busy" state
+- If all 6 connections are used for SSE, the browser cannot make additional requests to that domain
+- This limit applies across all browser tabs for the same domain, meaning opening multiple tabs can quickly exhaust the connection pool
+- The limit is implemented by all major browsers (Chrome, Firefox, Safari, Opera) and has been marked as "Won't Fix"
+
+**Real-World Impact:**
+When all connections are used by SSE, every action in the UI becomes blocked on a very narrow head-of-line-blocking pipe, as HTTP/1.1 doesn't allow multiplexing. This effectively freezes the application, preventing any other HTTP requests (images, CSS, API calls) from proceeding.
+
+**Why HTTP/1.1 Persists:**
+- Legacy infrastructure that hasn't been upgraded
+- Break-and-inspect proxies that downgrade connections to HTTP/1.1
+- Older server software that doesn't support HTTP/2
+- Corporate security policies requiring traffic inspection
+- Hosting providers and CDNs not fully migrated to HTTP/2
+- Embedded systems and IoT devices with older HTTP stacks
+
+**The HTTP/2 Solution:**
+HTTP/2 solves this problem through multiplexing, with the maximum number of simultaneous HTTP streams negotiated between server and client, defaulting to 100. However, not all environments support HTTP/2, making this a deployment risk rather than a complete solution.
+
+**Mitigation Strategies:**
+- Ensure HTTP/2 support is mandatory for production deployments
+- Design applications to use minimal concurrent SSE connections
+
+</details>
+
+## Summary
+
+Datastar presents a compelling hypermedia-driven approach to building reactive web applications, but production adoption requires careful consideration of several architectural trade-offs.
+The framework excels when its constraints align with project requirements, but misalignment can lead to significant architectural challenges.
+
+---
+
+*This document reflects the framework state as of v1.0.0-RC.6. Always consult the official Datastar documentation and release notes for the most current information.*
+
+## Sources
+
+- HTTP version statistics: Cloudflare Radar 2024 Year in Review (https://blog.cloudflare.com/radar-2024-year-in-review/)
+- Datastar GitHub Repository: https://github.com/starfederation/datastar
+- Datastar Issue #900: https://github.com/starfederation/datastar/issues/900
+- Datastar Security Documentation: https://data-star.dev/reference/security

@@ -92,6 +92,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Guides & How-tos
 
+- **[Production Considerations](/docs/considerations.md)** - Comprehensive analysis of Datastar's known limitations, architectural trade-offs, and production challenges. Covers security implications (XSS, CSP requirements), SSE reconnection behavior, HTTP/1.1 compatibility issues, state management limitations, and API stability concerns. Includes framework comparisons, real-world impact assessments, mitigation strategies, and guidance on when Datastar is (or isn't) appropriate for your use case. Essential reading for teams evaluating Datastar for production deployments. #production #security #architecture #decision-making
+
 - **[Datastar RC6 Data Attributes Reference](https://winkler1.github.io/ds-attrs/)** - Technical API reference documenting 30+ Datastar RC6 data attributes. Provides a lookup table of declarative attributes for data binding, event handling, computed values, dynamic styling, request tracking, and change observation. Each entry includes attribute syntax and functionality description. By [@winkler1](https://github.com/winkler1) #reference #api #documentation
 
 - **[Simplicity Is A Virtue: How To Build Modern Web Apps With Datastar](https://iansmith.github.io/dsbook/)** - Comprehensive book and learning guide for Datastar (work in progress). Aims to be the definitive resource for learning Datastar with a focus on simplicity and practical application. Uses the "mirabeau" presentation tool as a demonstration project. By [@delaneyj](https://github.com/delaneyj) and [@iansmith](https://github.com/iansmith) #getting-started #tutorial #learning
