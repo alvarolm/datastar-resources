@@ -61,11 +61,9 @@ traditional web architecture rather than a limitation.
 ## Security Vulnerabilities
 
 <details>
-<summary><h3>Critical: XSS Vulnerability as Architectural Limitation</h3></summary>
+<summary><h3>XSS Prevention: Developer Responsibility</h3></summary>
 
 **Acknowledgment:** Documented in official Datastar security documentation
-
-Datastar has an inherent security vulnerability by design:
 
 **The Core Issue:**
 Datastar expressions execute arbitrary JavaScript via the `Function()` constructor, creating an inherent XSS (Cross-Site Scripting) attack surface. The framework **does not automatically escape user input** in `data-*` attributes. Every user-provided value requires manual escaping, and failure to do so enables arbitrary code execution.
