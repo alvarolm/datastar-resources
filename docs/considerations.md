@@ -198,6 +198,9 @@ HTTP/2 solves this problem through multiplexing, with the maximum number of simu
 - Ensure HTTP/2 support is mandatory for production deployments
 - Design applications to use minimal concurrent SSE connections
 
+**Additional Resources:**
+For more SSE best practices and performance optimization tips, see the community-maintained [SSE Survival Guide](https://gist.github.com/derekr/fb8dd720d5c1600fefe3521d91ae83a4) by [@derekr](https://github.com/derekr), which covers connection management, compression strategies, and common gotchas.
+
 </details>
 
 ## Summary
