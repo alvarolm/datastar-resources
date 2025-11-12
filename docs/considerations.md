@@ -8,16 +8,27 @@
 ## Documentation Gaps
 
 <details>
-<summary><h3>Incomplete Client API Documentation</h3></summary>
+<summary><h3>Plugin API: Undocumented and Unofficial</h3></summary>
 
-The client-side API (datastar.js) has incomplete documentation. Specifically, the plugins API documentation is currently a work in progress. It is recommended that developers read the source code directly to understand plugin implementation details.
+While plugins are used in the Datastar ecosystem, the plugin API has not been officially announced or documented. When questioned about incomplete documentation, a Datastar maintainer stated:
+
+> "How is it incomplete documentation if it the plugin API has not yet officially been announced?"
+
+This response reveals the core issue: functionality exists and is being used, but without official status. This means:
+
+- No official documentation exists
+- No API stability guarantees
+- Developers must read source code to understand implementation
+- API may change without notice in future releases
+
+The distinction between "in use" and "officially supported" creates uncertainty about whether developers should rely on plugin functionality in production applications.
 
 </details>
 
 ## API Stability Concerns
 
 <details>
-<summary><h3>Pre-1.0 Stability Makes Production Risky</h3></summary>
+<summary><h3>Breaking Changes Continue During RC Phase</h3></summary>
 
 The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
 Datastar author have stated: "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
@@ -26,14 +37,21 @@ Datastar author have stated: "rc is our very last chance to break/change things,
 ## State Management Limitations
 
 <details>
-<summary><h3>State Persistence Challenges</h3></summary>
+<summary><h3>Server-First State Management</h3></summary>
 
-Signals do not persist across page redirects or full page reloads. Each page load starts with a fresh state. Applications requiring state persistence must implement manual mechanisms such as:
-- localStorage (client-side storage)
-- Query parameters (URL-based state)
-- Cookies (HTTP-based state)
+**Design Philosophy:**
+Signals do not persist across page redirects or full page reloads by design. This follows the **traditional web application model** where the server is the source of truth for application state.
 
-This limitation may make Datastar challenging for applications requiring robust offline capabilities or complex state management across navigation events without additional architectural planning.
+**Standard Web Approach:**
+Most web applications use server-side state management through cookies (HTTP-based state)
+
+This is how web applications worked before single-page application (SPA) frameworks popularized client-side state management. Datastar returns to this simpler, server-first model.
+
+**Consideration for SPA Developers:**
+Developers coming from client-heavy frameworks (React, Vue, Angular) who expect client-side state to persist automatically by default will need to adjust their mental model. This is a return to
+traditional web architecture rather than a limitation.
+
+**Applications are recommended to store their state in the backend, if you must store state on the client then you should implement manual mechanisms**
 
 </details>
 
