@@ -1,5 +1,9 @@
 # Datastar Resources
 
+> <img src="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-16.svg" width="16" height="16" alt="discussions" style="filter: brightness(0) invert(1);"> [Discussions](https://github.com/alvarolm/datastar-resources/discussions) are now open! Since the Datastar maintainers have their hands full, this is a place to keep public organized conversations about Datastar.
+
+> <img src="https://raw.githubusercontent.com/primer/octicons/main/icons/file-16.svg" width="16" height="16" alt="file" style="filter: brightness(0) invert(1);"> [docs/considerations.md](/docs/considerations.md) is a good starting point for understanding Datastar's production trade-offs. It's looking for improvements - check the <img src="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-16.svg" width="16" height="16" alt="discussion" style="filter: brightness(0) invert(1);"> [discussion](https://github.com/alvarolm/datastar-resources/discussions/5) to contribute!
+
 A collection of resources for [Datastar](https://data-star.dev), the hypermedia framework for building reactive web applications.
 
 > **Note:** This repository is not endorsed by Datastar or its authors. It is a community-driven collection of resources.
