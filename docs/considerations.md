@@ -31,7 +31,10 @@ The distinction between "in use" and "officially supported" creates uncertainty 
 <summary><h3>Breaking Changes Continue During RC Phase</h3></summary>
 
 The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
-Datastar author have stated: "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
+A Datastar maintainer stated:
+
+> "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
+
 </details>
 
 ## State Management Limitations
