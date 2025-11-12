@@ -87,7 +87,7 @@ Many lightweight frameworks face similar trade-offs between flexibility and secu
 Datastar's approach is similar to Alpine.js in prioritizing simplicity and small bundle size over built-in security mechanisms, requiring developers to implement their own escaping strategies. Frameworks with compilation steps (Vue, React, Svelte) can provide better defaults at the cost of build complexity.
 
 **Community Security Efforts:**
-There are community efforts exploring enhanced security measures for Datastar. The [securestar fork](https://github.com/starfederation/datastar/compare/develop...MichaelWest22:securestar) by [@MichaelWest22](https://github.com/MichaelWest22) focuses on improving secure evaluation mechanisms and mitigating code execution vulnerabilities through safer handling of dynamic JavaScript evaluation.
+There are community efforts exploring enhanced security measures for Datastar. The [datastar fork](https://github.com/starfederation/datastar/compare/develop...MichaelWest22:securestar) by [@MichaelWest22](https://github.com/MichaelWest22) focuses on improving secure evaluation mechanisms and mitigating code execution vulnerabilities through safer handling of dynamic JavaScript evaluation.
 
 </details>
 
