@@ -203,6 +203,10 @@ For more SSE best practices and performance optimization tips, see the community
 
 </details>
 
+## Community Feedback
+
+Have experiences or insights to share about using Datastar in production? Join the discussion at [GitHub Discussions #5](https://github.com/alvarolm/datastar-resources/discussions/5) to share your feedback, report additional considerations, or discuss workarounds with the community.
+
 ## Summary
 
 Datastar presents a compelling hypermedia-driven approach to building reactive web applications, but production adoption requires careful consideration of several architectural trade-offs.
