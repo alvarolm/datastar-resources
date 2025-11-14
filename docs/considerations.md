@@ -28,43 +28,26 @@ The distinction between "in use" and "officially supported" creates uncertainty 
 <details>
 <summary><h3>Missing Build Instructions (no reproducible builds)</h3></summary>
 
-**The Problem:**
-Datastar provides pre-built bundles with each release and hosts them on CDN (https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.6/bundles/datastar.js), but **does not document how those bundles are built**. While the source code is available, the absence of build instructions means developers cannot independently reproduce the official releases.
+Datastar provides pre-built bundles with each release via CDN (https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.6/bundles/datastar.js), but **does not document how those bundles are built**. This creates a critical gap: developers cannot independently verify that published bundles match the tagged source code or reproduce official releases.
 
 **Why This Matters:**
-Without documented build steps, developers face critical challenges:
+- **Supply Chain Security:** No way to verify CDN bundles match the source code
+- **Compliance Requirements:** Organizations with security standards (SOC 2, HIPAA, PCI-DSS) often require reproducible builds and artifact verification
+- **Custom Builds:** No documented process for modifications (e.g., custom `data-` prefix)
+- **Air-gapped Deployments:** Systems without CDN access must build from source
 
-**Supply Chain Security:** No way to verify that published bundles match the tagged releases
-**Reproducible Builds:** Organizations with security requirements cannot independently recreate official releases
-
-**When Build Instructions Are Critical:**
-- **Security-conscious environments:** Enterprises, government, healthcare, and financial sectors often require verifying that dependencies can be built from source to match published artifacts
-- **Supply chain verification:** Organizations need to confirm that CDN-hosted bundles correspond exactly to the source code at a given tag/release
-- **Custom builds:** Projects requiring modifications (e.g., changing the `data-` prefix, custom bundling strategies)
-- **CI/CD integration:** Automated pipelines that require building all dependencies from source for audit trails
-- **Compliance requirements:** Industries with strict compliance standards (SOC 2, HIPAA, PCI-DSS) may require reproducible builds
-
-**The Reproducibility Gap:**
-The core issue is that while Datastar is open-source, **the build process is undocumented**. This creates a gap between source code transparency and artifact transparency. Developers can read the source, but cannot verify that the distributed bundles.
-
-**Current Status:**
-Build instructions are now available (as of November 2025) through community documentation. To build Datastar from source:
-
+**Build Instructions (Community-Documented):**
 ```bash
 cd library/
 npx esbuild --bundle src/bundles/datastar.ts --outdir=../bundles/ --minify --sourcemap --target=es2023 --format=esm
 ```
 
-Custom alias prefixes can be configured using `--define ALIAS=...` when running the build command.
+Use `--define ALIAS=...` to customize the attribute prefix.
 
-**Best Practice Recommendation:**
-For production applications relying on Datastar's CDN or release bundles:
-- Pin exact versions in your CDN URLs (avoid floating version tags)
-- Document the specific release version being used
-- Attempt to build from source and compare checksums against CDN bundles to verify integrity
-- Consider self-hosting verified builds rather than depending on external CDN infrastructure
-
-This ensures reproducible deployments and reduces supply chain risk when depending on pre-built artifacts.
+**Best Practices:**
+- Pin exact CDN versions (avoid floating tags)
+- Build from source and compare checksums against CDN bundles
+- Consider self-hosting verified builds
 
 **Reference:** [Datastar Tips: Building from Source](https://lllama.github.io/posts/datastartips/)
 
