@@ -86,7 +86,7 @@ traditional web architecture rather than a limitation.
 
 </details>
 
-## Security Vulnerabilities
+## Security
 
 <details>
 <summary><h3>XSS Prevention: Developer Responsibility</h3></summary>
