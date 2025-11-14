@@ -134,6 +134,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Misunderstanding SSE](https://yagni.club/3m475dwkjvc2o)** - Technical article challenging common misconceptions about Server-Sent Events (SSE), explaining that SSE is fundamentally a text-based response format that works with any HTTP method (not just GET) and should be the default for server-driven page updates. Demonstrates progressive updates, form validation, and error handling using Datastar with extensive code examples comparing `text/html` vs `text/event-stream` approaches. By drk (YAGNI Club) #architecture #sse #tutorial #patterns #introduction
 
+- **[Datastar Tips](https://lllama.github.io/posts/datastartips/)** - Technical guide on building Datastar locally from source using esbuild. Covers the compilation process from the library directory, including options for minification, source mapping, and configuring the alias prefix using the `--define` flag. Provides practical steps for developers who want to work with Datastar source code directly. By [@lllama](https://github.com/lllama) (Felix Ingram) #guide #building #development #esbuild
+
 #### Examples
 
 - **[1a5s-datastar](https://github.com/delaneyj/1a5s-datastar)** - Reimplementation of the "1 App 5 Stacks" project using Go, Templ, and Datastar, demonstrating high-performance web development with minimal code. Features just 321 lines of Go across 6 files plus ~125 lines of Templ, sub-millisecond query execution, 19MB memory footprint, and single binary deployment with no external dependencies. Uses pure Go SQLite implementation and standard HTTP requests (supports HTTP/2 and HTTP/3). By [@delaneyj](https://github.com/delaneyj) #go #demo #performance #templ #minimal
