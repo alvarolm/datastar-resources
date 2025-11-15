@@ -62,7 +62,7 @@ A Datastar maintainer stated:
 
 > "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
 
-These changes have been sudden and with limited or no community feedback, resulting in:
+These last second changes in th RC versions have been sudden and with limited or no community feedback, resulting in:
 
 - Unnecessary cdn version locking (https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js will point indefinitely to RC5)
 - Forced refactoring with minimal notice
