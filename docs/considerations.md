@@ -194,7 +194,7 @@ As of the latest updates (v1.0.0-RC.6), the team is still evaluating whether to 
 ## Performance Limitations
 
 <details>
-<summary><h3>Critical: 6-Connection SSE Limit on HTTP/1.1</h3></summary>
+<summary><h3>6-Connection SSE Limit on HTTP/1.1</h3></summary>
 
 Datastar relies heavily on Server-Sent Events (SSE) for server-to-client communication. This creates a **critical architectural bottleneck** when used over HTTP/1.1.
 
