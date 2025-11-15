@@ -28,13 +28,12 @@ The distinction between "in use" and "officially supported" creates uncertainty 
 <details>
 <summary><h3>Missing Build Instructions (no reproducible builds)</h3></summary>
 
-Datastar provides pre-built bundles with each release via CDN (https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.6/bundles/datastar.js), but **does not document how those bundles are built**. This creates a critical gap: developers cannot independently verify that published bundles match the tagged source code or reproduce official releases.
+Datastar provides pre-built bundles with each release in the repo itself and via CDN (https://cdn.jsdelivr.net/gh/starfederation/datastar@1.0.0-RC.6/bundles/datastar.js), but **does not document how those bundles are built**. This creates a critical gap: developers cannot independently verify that published bundles match the tagged source code or reproduce official releases.
 
 **Why This Matters:**
-- **Supply Chain Security:** No way to verify CDN bundles match the source code
+- **Supply Chain Security:** No way to verify offical bundles
 - **Compliance Requirements:** Organizations with security standards (SOC 2, HIPAA, PCI-DSS) often require reproducible builds and artifact verification
-- **Custom Builds:** No documented process for modifications (e.g., custom `data-` prefix)
-- **Air-gapped Deployments:** Systems without CDN access must build from source
+- **Custom Builds:** modifications results (bundles) may conflict with the unknown build process of the official datastar releases
 
 **Build Instructions (Community-Documented):**
 ```bash
