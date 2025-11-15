@@ -65,7 +65,7 @@ A Datastar maintainer stated:
 These changes have been sudden and with limited or no community feedback, resulting in:
 
 - Unnecessary cdn version locking (https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js will point indefinitely to RC5)
-- Forced refactoring
+- Forced refactoring with minimal notice
 
 </details>
 
