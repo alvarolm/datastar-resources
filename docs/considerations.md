@@ -65,7 +65,7 @@ A Datastar maintainer stated:
 
 </details>
 
-## State Management Limitations
+## State Management
 
 <details>
 <summary><h3>Server-First State Management</h3></summary>
