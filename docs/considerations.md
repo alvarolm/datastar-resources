@@ -33,7 +33,7 @@ Datastar provides pre-built bundles with each release in the repo itself and via
 **Why This Matters:**
 - **Supply Chain Security:** No way to verify offical bundles
 - **Compliance Requirements:** Organizations with security standards (SOC 2, HIPAA, PCI-DSS) often require reproducible builds and artifact verification
-- **Custom Builds:** modifications results (bundles) may conflict with the unknown build process of the official datastar releases
+- **Custom Builds:** modifications may conflict with the unknown build process of the official datastar releases
 
 **Build Instructions (Community-Documented):**
 ```bash
