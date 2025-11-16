@@ -20,7 +20,7 @@ These last second changes in th RC versions have been sudden and with limited or
 - Unnecessary cdn version locking (https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js will point indefinitely to RC5)
 - Forced refactoring with minimal notice
 
-Currently there is no mechanism to check the Datastar client version (datastar.js) at runtime. This would at least provide some mitigation by allowing developers to implement version-specific workarounds when necessary, this used to be a feature and was removed at some point, the current offical stance (from a Datastar maintainer) is:
+Currently there is no mechanism to check the Datastar client version (datastar.js) at runtime. This would at least provide some mitigation by allowing developers to implement version-specific workarounds when necessary, this used to be a feature but was removed at some point, the current offical stance (from a Datastar maintainer) is:
 
 > ... We used to export the version. I’ll look into it.
 
