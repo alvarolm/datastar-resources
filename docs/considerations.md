@@ -73,66 +73,13 @@ Use `--define ALIAS=...` to customize the attribute prefix.
 
 </details>
 
-## State Management
-
-<details>
-<summary><h3>Server-First State Management</h3></summary>
-
-**Design Philosophy:**
-Signals do not persist across page redirects or full page reloads by design. This follows the **traditional web application model** where the server is the source of truth for application state.
-
-**Standard Web Approach:**
-Most web applications use server-side state management through cookies (HTTP-based state)
-
-This is how web applications worked before single-page application (SPA) frameworks popularized client-side state management. Datastar returns to this simpler, server-first model.
-
-**Consideration for SPA Developers:**
-Developers coming from client-heavy frameworks (React, Vue, Angular) who expect client-side state to persist automatically by default will need to adjust their mental model. This is a return to
-traditional web architecture rather than a limitation.
-
-**Applications are recommended to store their state in the backend, if you must store state on the client then you should implement manual mechanisms**
-
-</details>
-
-## Security
-
-<details>
-<summary><h3>XSS Prevention: Developer Responsibility</h3></summary>
-
-**Acknowledgment:** Documented in official Datastar security documentation
-
-**The Core Issue:**
-Datastar expressions execute arbitrary JavaScript via the `Function()` constructor, creating an inherent XSS (Cross-Site Scripting) attack surface. The framework **does not automatically escape user input** in `data-*` attributes. Every user-provided value requires manual escaping, and failure to do so enables arbitrary code execution.
-
-**Developer Responsibility:**
-The security documentation explicitly warns "never trust user input" but places the full burden of input sanitization on developers. There are no automatic protections, guardrails, or validation mechanisms built into the framework.
-
-**Content Security Policy Impact:**
-This design choice mandates `unsafe-eval` in Content Security Policy (CSP), fundamentally weakening the application's security posture. Organizations with strict CSP requirements (common in enterprise, government, healthcare, and financial sectors) may be unable to use Datastar without violating their security policies.
-
-**Risk Assessment:**
-Developers should exercise extreme caution when processing untrusted content, ensuring meticulous manual escaping of every dynamic value. One oversight in input sanitization can compromise the entire application. This architectural choice requires a higher level of security awareness compared to frameworks with built-in escaping mechanisms.
-
-**Framework Comparison:**
-Many lightweight frameworks face similar trade-offs between flexibility and security:
-- **Alpine.js** uses `Function()` constructor for expression evaluation, requiring `unsafe-eval` in CSP and similar manual escaping vigilance
-- **Vue.js** (runtime + compiler) automatically escapes template interpolations by default, with explicit opt-in for raw HTML via `v-html`
-- **React** escapes JSX expressions by default, with explicit opt-in for raw HTML via `dangerouslySetInnerHTML`
-- **Svelte** escapes template expressions by default during compilation, with explicit opt-in via `{@html}`
-
-Datastar's approach is similar to Alpine.js in prioritizing simplicity and small bundle size over built-in security mechanisms, requiring developers to implement their own escaping strategies. Frameworks with compilation steps (Vue, React, Svelte) can provide better defaults at the cost of build complexity.
-
-**Community Security Efforts:**
-There are community efforts exploring enhanced security measures for Datastar. The [datastar fork](https://github.com/starfederation/datastar/compare/develop...MichaelWest22:securestar) by [@MichaelWest22](https://github.com/MichaelWest22) focuses on improving secure evaluation mechanisms and mitigating code execution vulnerabilities through safer handling of dynamic JavaScript evaluation.
-
-</details>
-
 ## Impractical Default Behaviors
 
 <details>
 <summary><h3>Stale Signal State on SSE Reconnection (Issue #900)</h3></summary>
 
 **Status:** Open issue reported in v1.0.0-beta.11, confirmed in RC.5 and RC.6
+
 **Acknowledgment:** Acknowledged by Datastar team; under evaluation for potential default behavior change
 
 **The Problem:**
@@ -196,6 +143,60 @@ This is classified as an **impractical default behavior** rather than a bug beca
 
 **Resolution Status:**
 As of the latest updates (v1.0.0-RC.6), the team is still evaluating whether to change this behavior. The most recent comment indicates active work toward changing the default to send current signals, but no timeline has been provided.
+
+</details>
+
+## State Management
+
+<details>
+<summary><h3>Server-First State Management</h3></summary>
+
+**Design Philosophy:**
+Signals do not persist across page redirects or full page reloads by design. This follows the **traditional web application model** where the server is the source of truth for application state.
+
+**Standard Web Approach:**
+Most web applications use server-side state management through cookies (HTTP-based state)
+
+This is how web applications worked before single-page application (SPA) frameworks popularized client-side state management. Datastar returns to this simpler, server-first model.
+
+**Consideration for SPA Developers:**
+Developers coming from client-heavy frameworks (React, Vue, Angular) who expect client-side state to persist automatically by default will need to adjust their mental model. This is a return to
+traditional web architecture rather than a limitation.
+
+**Applications are recommended to store their state in the backend, if you must store state on the client then you should implement manual mechanisms**
+
+</details>
+
+## Security
+
+<details>
+<summary><h3>XSS Prevention: Developer Responsibility</h3></summary>
+
+**Acknowledgment:** Documented in official Datastar security documentation
+
+**The Core Issue:**
+Datastar expressions execute arbitrary JavaScript via the `Function()` constructor, creating an inherent XSS (Cross-Site Scripting) attack surface. The framework **does not automatically escape user input** in `data-*` attributes. Every user-provided value requires manual escaping, and failure to do so enables arbitrary code execution.
+
+**Developer Responsibility:**
+The security documentation explicitly warns "never trust user input" but places the full burden of input sanitization on developers. There are no automatic protections, guardrails, or validation mechanisms built into the framework.
+
+**Content Security Policy Impact:**
+This design choice mandates `unsafe-eval` in Content Security Policy (CSP), fundamentally weakening the application's security posture. Organizations with strict CSP requirements (common in enterprise, government, healthcare, and financial sectors) may be unable to use Datastar without violating their security policies.
+
+**Risk Assessment:**
+Developers should exercise extreme caution when processing untrusted content, ensuring meticulous manual escaping of every dynamic value. One oversight in input sanitization can compromise the entire application. This architectural choice requires a higher level of security awareness compared to frameworks with built-in escaping mechanisms.
+
+**Framework Comparison:**
+Many lightweight frameworks face similar trade-offs between flexibility and security:
+- **Alpine.js** uses `Function()` constructor for expression evaluation, requiring `unsafe-eval` in CSP and similar manual escaping vigilance
+- **Vue.js** (runtime + compiler) automatically escapes template interpolations by default, with explicit opt-in for raw HTML via `v-html`
+- **React** escapes JSX expressions by default, with explicit opt-in for raw HTML via `dangerouslySetInnerHTML`
+- **Svelte** escapes template expressions by default during compilation, with explicit opt-in via `{@html}`
+
+Datastar's approach is similar to Alpine.js in prioritizing simplicity and small bundle size over built-in security mechanisms, requiring developers to implement their own escaping strategies. Frameworks with compilation steps (Vue, React, Svelte) can provide better defaults at the cost of build complexity.
+
+**Community Security Efforts:**
+There are community efforts exploring enhanced security measures for Datastar. The [datastar fork](https://github.com/starfederation/datastar/compare/develop...MichaelWest22:securestar) by [@MichaelWest22](https://github.com/MichaelWest22) focuses on improving secure evaluation mechanisms and mitigating code execution vulnerabilities through safer handling of dynamic JavaScript evaluation.
 
 </details>
 
