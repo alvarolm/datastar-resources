@@ -5,6 +5,27 @@
 >
 > **Disclaimer:** This is not official Datastar documentation. It represents a critical analysis of the framework's current state to supplement the official documentation. Always consult the [official Datastar documentation](https://data-star.dev) and [GitHub repository](https://github.com/starfederation/datastar) for the most current information.
 
+## API Stability Concerns
+
+<details>
+<summary><h3>Breaking Changes Continue During RC Phase</h3></summary>
+
+The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
+A Datastar maintainer stated:
+
+> "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
+
+These last second changes in th RC versions have been sudden and with limited or no community feedback, resulting in:
+
+- Unnecessary cdn version locking (https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js will point indefinitely to RC5)
+- Forced refactoring with minimal notice
+
+Currently there is no mechanism to check the Datastar client version (datastar.js) at runtime. This would at least provide some mitigation by allowing developers to implement version-specific workarounds when necessary, this used to be a feature and was removed at some point, the current offical stance (from a Datastar maintainer) is:
+
+> ... We used to export the version. I’ll look into it.
+
+</details>
+
 ## Documentation Gaps
 
 <details>
@@ -49,27 +70,6 @@ Use `--define ALIAS=...` to customize the attribute prefix.
 - Consider self-hosting verified builds
 
 **Reference:** [Datastar Tips: Building from Source](https://lllama.github.io/posts/datastartips/)
-
-</details>
-
-## API Stability Concerns
-
-<details>
-<summary><h3>Breaking Changes Continue During RC Phase</h3></summary>
-
-The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
-A Datastar maintainer stated:
-
-> "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
-
-These last second changes in th RC versions have been sudden and with limited or no community feedback, resulting in:
-
-- Unnecessary cdn version locking (https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js will point indefinitely to RC5)
-- Forced refactoring with minimal notice
-
-Currently there is no mechanism to check the Datastar client version (datastar.js) at runtime. This would at least provide some mitigation by allowing developers to implement version-specific workarounds when necessary, this used to be a feature and was removed at some point, the current offical stance (from a Datastar maintainer) is:
-
-> ... We used to export the version. I’ll look into it.
 
 </details>
 
