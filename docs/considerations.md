@@ -8,7 +8,7 @@
 ## API Stability Concerns
 
 <details>
-<summary><h3>Navigating Ongoing Breaking Changes in Pre-Production Versions</h3></summary>
+<summary><h3>Ongoing Breaking Changes in Pre-Production Versions</h3></summary>
 
 The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
 A Datastar maintainer stated:
