@@ -188,6 +188,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 #### Videos & Screencasts
 
+- **[Datastar Series](https://www.youtube.com/watch?v=I8QLWWPGT-c&list=PLbqyjFEQew904tnpc7dtc6VuyX7HikBfR)** - Comprehensive 11-episode video tutorial series covering Datastar fundamentals. Episodes include: introduction to Datastar, Rocket's Eye overview, example flow walkthrough, hypermedia history lessons (parts 1 & 2), data attributes overview/ordering/casing/aliasing/error handling, and Server-Sent Events overview. Great for learning Datastar from  basics to advanced concepts. By Lock In Code #video #tutorial #series #introduction #sse
+
 - **[Is Datastar the full-stack SSE framework of the future?](https://www.youtube.com/watch?v=u0I7f6NMZvk)** - A video exploring Datastar's capabilities as a full-stack SSE framework, covering its architecture, real-time features, and potential for building modern web applications. By Everyday Superpowers #video #screencast #introduction
 
 - **[Datastar – The hypermedia framework (Podcast)](https://open.spotify.com/show/2DQ8iwAiLF8BhUaCos3t9U)** - Official Datastar podcast discussing how Datastar helps build reactive web applications with the simplicity of server-side rendering and the power of a full-stack SPA framework. Episodes cover tooling, performance, signals, and framework design. #podcast #introduction #architecture
