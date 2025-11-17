@@ -24,6 +24,16 @@ Currently there is no mechanism to check the Datastar client version (datastar.j
 
 > ... We used to export the version. I’ll look into it.
 
+A mechanism for checking the Datastar client (datastar.js) version would be mainly useful for:
+
+- Cross version plugin compatibility
+- Debugging: for reporting issues and unexpected behaviors (when the version could not be infered, or it needs to be retrieved programmatically).
+
+Update:
+A thread was opened in the discord server of the official datastar server asking the community opinions about this feature, but two of the maintainers interceded and it was ultimatly closed with this comment from one of the maintainers:
+
+> Help is about help, not garnering opinions that have zero real world concrete reason for existing. Please refrain from continuing to abuse the ⁠help area, it's exhausting
+
 </details>
 
 ## Documentation Gaps
