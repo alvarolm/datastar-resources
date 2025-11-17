@@ -11,9 +11,16 @@
 <summary><h3>Ongoing Breaking Changes in Pre-Production Versions</h3></summary>
 
 The current version (v1.0.0-RC.6) is pre-production by definition. Release candidates should approach stability, but Datastar has continued introducing breaking changes during the RC phase.
+
 A Datastar maintainer stated:
 
 > "rc is our very last chance to break/change things, exposing at the last secnond is the right call"
+
+Then a community member asked:
+
+> I would be curious on the arguments for releasing a new API after RC with v1.0. Not going to start a discussion, but isn't the point of release candidates to test APIs and gather feedback? What do you gain from hiding the new API until v1 🤔? Do you fear the feedback 🙈?
+
+Then this discussion devolved into an unclear response.
 
 These last second changes in th RC versions have been sudden and with limited or no community feedback, resulting in:
 
@@ -30,7 +37,7 @@ A mechanism for checking the Datastar client (datastar.js) version would be main
 - Debugging: for reporting issues and unexpected behaviors (when the version could not be infered, or it needs to be retrieved programmatically).
 
 Update:
-A thread was opened in the discord server of the official datastar (in a polite tone) server asking the community opinions about this possible feature, but two of the maintainers interceded and it was ultimatly closed with this comment (from one of the maintainers):
+A thread was opened in the discord server of the official datastar server (in a polite tone) asking the community opinions about this possible feature, but two of the maintainers interceded and it was ultimatly closed with this comment (from one of the maintainers):
 
 > Help is about help, not garnering opinions that have zero real world concrete reason for existing. Please refrain from continuing to abuse the ⁠help area, it's exhausting
 
