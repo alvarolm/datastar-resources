@@ -4,6 +4,8 @@
 > This document outlines known limitations, architectural trade-offs, and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **November 2025 (v1.0.0-RC.6)**.
 >
 > **Disclaimer:** This is not official Datastar documentation. It represents a critical analysis of the framework's current state to supplement the official documentation. Always consult the [official Datastar documentation](https://data-star.dev) and [GitHub repository](https://github.com/starfederation/datastar) for the most current information.
+>
+> **Note:** Many of the considerations outlined in this document can be avoided by following [The Datastar Way](https://github.com/Huangphoux/the_datastar_way) - a community guide with best practices and guidelines for working with Datastar.
 
 ## API Stability Concerns
 
