@@ -4,7 +4,7 @@
 > There is a document intended to show datastar (community) guidelines: [The Datastar Way](https://github.com/Huangphoux/the_datastar_way) which may help avoid these considerations
 
 > **About This Document**
-> This document outlines known limitations, architectural trade-offs, and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **November 2025 (v1.0.0-RC.6)**.
+> This document outlines known limitations, architectural trade-offs, and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **December 2025 (v1.0.0-RC.7)**.
 >
 > **Disclaimer:** This is not official Datastar documentation. It represents a critical analysis of the framework's current state to supplement the official documentation. Always consult the [official Datastar documentation](https://data-star.dev) and [GitHub repository](https://github.com/starfederation/datastar) for the most current information.
 
@@ -43,6 +43,15 @@ Update:
 A thread was opened in the official discord server of datastar (in a polite tone) asking the community opinions about this possible feature, but two of the maintainers interceded and it was ultimatly closed with this comment (from one of the maintainers):
 
 > Help is about help, not garnering opinions that have zero real world concrete reason for existing. Please refrain from continuing to abuse the ⁠help area, it's exhausting
+
+breaking changes still occur as evidenced by this user comment in the official discord server (#general), date: 18th of december 2025
+
+> Lot of my RC6 app abused this bad pattern
+> <div id=x data-init=@get(/sse)></div>
+> where /sse would return a stream that rewrote div id=x and keep running the stream
+> Under RC7 - it responds with the first sse event, then closes the connection to /sse, because the element the @get was attached to has been overwritten 
+> Agree that the RC7 new behavior is much better to reason about
+> But damn - blew half the day debugging my app 🙂  Entirely my bad, because I’m in the middle of rewriting some backend SDK networking stuff, so obviously assumed those changes were causing my connections to randomly be closed by the backend or something
 
 </details>
 
