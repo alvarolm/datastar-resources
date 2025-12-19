@@ -4,7 +4,7 @@
 > There is a document intended to show datastar (community) guidelines: [The Datastar Way](https://github.com/Huangphoux/the_datastar_way) which may help avoid these considerations
 
 > **About This Document**
-> This document outlines known limitations, architectural trade-offs, and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **December 2025 (v1.0.0-RC.7)**.
+> This document outlines limitations, trade-offs and potential challenges when using Datastar in production environments. It is intended to help developers make informed decisions about when and how to use Datastar effectively. These are community-identified concerns based on framework analysis, GitHub issues, and real-world testing as of **December 2025 (v1.0.0-RC.7)**.
 >
 > **Disclaimer:** This is not official Datastar documentation. It represents a critical analysis of the framework's current state to supplement the official documentation. Always consult the [official Datastar documentation](https://data-star.dev) and [GitHub repository](https://github.com/starfederation/datastar) for the most current information.
 
