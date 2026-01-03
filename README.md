@@ -156,7 +156,8 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[Why I Switched from HTMX to Datastar](https://everydaysuperpowers.dev/articles/why-i-switched-from-htmx-to-datastar/)** - Personal account of transitioning from HTMX to Datastar, highlighting Datastar's simpler API, component-based approach, real-time SSE updates, and server-driven state management. Explores multi-user collaborative applications and web-native features like CSS view transitions. By Everyday Superpowers #comparison #htmx #real-time #sse
 
-- **[Datastar + Common Lisp](https://interlaye.red/datastar_002dcommon_002dlisp.html)** - Exploration of using Datastar with a Common Lisp backend for reactive web development. Discusses the benefits of server-side state management and alternative approaches to complex modern frameworks, showcasing a simpler and more enjoyable development experience. #commonlisp #introduction #tutorial
+- **[Datastar-CL](https://github.com/fsmunoz/datastar-cl)** - Datastar Common Lisp SDK.
+  - see also: **[Datastar + Common Lisp](https://interlaye.red/datastar_002dcommon_002dlisp.html)** - Exploration of using Datastar with a Common Lisp backend for reactive web development. Discusses the benefits of server-side state management and alternative approaches to complex modern frameworks, showcasing a simpler and more enjoyable development experience. #commonlisp #introduction #tutorial
 
 - **[just f*cking use datastar](https://blog.legires.fr/2025/10/11/just_fucking_use_datastar.html)** - Satirical critique of modern web development complexity, advocating for Datastar as a simpler alternative to frameworks like React. Emphasizes native web technologies and reactive data attributes over complicated frontend tooling. By le guide #opinion #comparison #simplicity
 
