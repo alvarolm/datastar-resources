@@ -273,7 +273,9 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[CARM](https://carm.online)** - Christian Apologetics Research Ministry providing educational resources for Christian apologetics and theology. Features articles addressing theological questions, Matt Slick Live Radio broadcasts (M-F 6PM EST), community discussion forums, online schools and courses, and shop for apologetics materials. *Datastar v1.0.0-RC.5 (detected 2025-10-22)*. #education #community #radio #production
 
-- **[Soffio](https://soffio.xfyyzy.xyz)** - Rust-powered content publishing platform combining static site rendering with an interactive admin interface. Provides fast, statically-rendered public pages with interactive elements and a productivity-focused admin console ([admin.soffio.xfyyzy.xyz](https://admin.soffio.xfyyzy.xyz)) for writing, editing, and publishing blog content. Built with Axum, Askama, SQLx, and Datastar. Features organized domain/application/infrastructure architecture. Demo database resets hourly. Open source (BSD-2-Clause). *Datastar version not detected (checked 2025-11-12)*. By [@xfyyzy](https://github.com/xfyyzy). Source: [github.com/xfyyzy/soffio](https://github.com/xfyyzy/soffio) #rust #cms #blog #content #production
+- **[datastar-fastify-example-book](https://github.com/johntom/datastar-fastify-example-book)
+Examples of Datastar (v1.0.0-RC.7) with Node.js/Fastify/Nunjucks, showcasing this stack as an alternative to existing examples that excluded Node.js (Go Datastar! doesn't always mean Golang). Some are conversions from GO examples; others are rewrites of HTMX code I've written over the past 2 years. The highlight is the SQLite Book Manager, tested with Chrome, Edge, and DuckDuckGo—open in all 3 browsers to see locks and instant updates. Features infinite scroll with both inline row editing and modal dialog editing. Live demo hosted on [Render](https://render.com/) (free tier may take a few seconds to spin up). All examples use datastar-fastify-sdk.
+Live Demo: https://datastar-fastify-example-book.onrender.com
 
 ---
 
