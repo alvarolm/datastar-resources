@@ -140,7 +140,7 @@ A specific section called **[Using Datastar](#using-datastar)** showcases real-w
 
 - **[datastar.cr](https://github.com/watzon/datastar.cr)** - Crystal language SDK for the Datastar hypermedia framework. Features server-side rendering with reactive UI updates via Server-Sent Events, fiber-based concurrent streaming with automatic heartbeat monitoring, framework adapters for Kemal, Athena, and Blueprint, and pub/sub system for multi-session synchronization. Supports both streaming mode (long-lived connections) and one-off mode (single updates) with flexible component abstraction through rendering protocol. Includes in-memory or custom backends (Redis example) for pub/sub functionality. Requires Crystal ≥1.18.2. MIT License. By [@watzon](https://github.com/watzon) #crystal #backend #library #real-time
 
-- **[datastar-go-strict-csp](https://github.com/addrummond/datastargostrictcsp)** Go library that enables use of Datastar without `unsafe-eval` or `unsafe-inline` in the Content Security Policy. Go backend required. By [@addrummond](https://github.com/addrummond) #library #go
+- **[datastar-go-strict-csp](https://github.com/addrummond/datastargostrictcsp)** - Go library that enables use of Datastar without `unsafe-eval` or `unsafe-inline` in the Content Security Policy. Go backend required. By [@addrummond](https://github.com/addrummond) #library #go
 
 #### Guides & How-tos
 
