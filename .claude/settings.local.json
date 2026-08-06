@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:lllama.github.io)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:jsfiddle.net)",
+      "Bash(wc:*)",
+      "WebFetch(domain:irgo.dev)",
+      "Bash(git show:*)",
+      "WebFetch(domain:chromewebstore.google.com)",
+      "WebSearch",
+      "WebFetch(domain:chrome-stats.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
